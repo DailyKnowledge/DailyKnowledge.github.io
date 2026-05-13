@@ -2,60 +2,107 @@ const searchForm = document.querySelector("[data-search-form]");
 const searchInput = document.querySelector("#q");
 const topicSelect = document.querySelector("[data-topic-select]");
 const topicTabs = [...document.querySelectorAll(".topic-tab[data-topic]")];
-const categoryChips = [...document.querySelectorAll("[data-category-chip]")];
-const noteCards = [...document.querySelectorAll(".note-card")];
+const archiveGrid = document.querySelector(".archive-grid");
+const pagination = document.querySelector("[data-archive-pagination]");
 const randomNoteLink = document.querySelector("[data-random-note]");
 const randomNotePageLink = document.querySelector("[data-random-note-page]");
+const archiveNotes = Array.isArray(window.KNOWLEDGE_ARCHIVE_NOTES) ? window.KNOWLEDGE_ARCHIVE_NOTES : [];
+const pageSize = Number(window.KNOWLEDGE_ARCHIVE_PAGE_SIZE || 9);
+
+let archivePage = 1;
 
 function activeTopic() {
-  return document.querySelector(".topic-tab.is-active")?.dataset.topic || "All";
+  const active = document.querySelector(".topic-tab.is-active");
+  return active ? active.dataset.topic : "All";
 }
 
-function filterArchive() {
-  if (!searchInput || noteCards.length === 0) return;
+function escapeHtml(value) {
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
 
-  const query = searchInput.value.trim().toLowerCase();
+function filteredNotes() {
+  const query = searchInput ? searchInput.value.trim().toLowerCase() : "";
   const topic = activeTopic();
-  let visibleCount = 0;
 
-  noteCards.forEach((card) => {
-    const categories = (card.dataset.categories || "").split("|");
+  return archiveNotes.filter((note) => {
+    const categories = note.categories || [];
     const matchesTopic = topic === "All" || categories.includes(topic);
-    const matchesQuery = !query || card.dataset.search.includes(query);
-    const visible = matchesTopic && matchesQuery;
-    card.hidden = !visible;
-    if (visible) visibleCount += 1;
+    const matchesQuery = !query || String(note.search || "").includes(query);
+    return matchesTopic && matchesQuery;
   });
+}
 
-  document.querySelector(".empty-state")?.remove();
-  if (visibleCount === 0) {
-    const empty = document.createElement("p");
-    empty.className = "empty-state";
-    empty.textContent = "No notes match that search.";
-    document.querySelector(".archive-grid")?.append(empty);
+function categoryUrl(category) {
+  return `?topic=${encodeURIComponent(category)}#archive`;
+}
+
+function noteCard(note) {
+  const categories = note.categories || [];
+  const tags = categories
+    .map(
+      (category) =>
+        `<a href="${categoryUrl(category)}" data-category-chip="${escapeHtml(category)}">${escapeHtml(category)}</a>`
+    )
+    .join("");
+
+  return `
+    <article class="note-card" data-categories="${escapeHtml(categories.join("|"))}" data-search="${escapeHtml(note.search || "")}">
+      <div class="note-card-image" style="background-image: url('${escapeHtml(note.image)}')" aria-hidden="true"></div>
+      <div class="note-card-body">
+        <small>${escapeHtml(note.topic)} · ${escapeHtml(note.prettyDate)}</small>
+        <h3>${escapeHtml(note.title)}</h3>
+        <p>${escapeHtml(note.summary)}</p>
+        <div class="tag-list" aria-label="Knowledge categories">${tags}</div>
+        <a href="${escapeHtml(note.url)}">Read note</a>
+      </div>
+    </article>
+  `;
+}
+
+function renderPagination(totalNotes) {
+  if (!pagination) return;
+
+  const totalPages = Math.max(1, Math.ceil(totalNotes / pageSize));
+  if (totalPages <= 1) {
+    pagination.innerHTML = "";
+    return;
   }
+
+  pagination.innerHTML = `
+    <button type="button" data-page-action="previous" ${archivePage === 1 ? "disabled" : ""}>Previous</button>
+    <span>Page ${archivePage} of ${totalPages}</span>
+    <button type="button" data-page-action="next" ${archivePage === totalPages ? "disabled" : ""}>Next</button>
+  `;
 }
 
-if (searchForm) {
-  searchForm.addEventListener("submit", (event) => event.preventDefault());
-}
+function renderArchive() {
+  if (!archiveGrid || archiveNotes.length === 0) return;
 
-if (searchInput) {
-  searchInput.addEventListener("input", filterArchive);
-}
+  const notes = filteredNotes();
+  const totalPages = Math.max(1, Math.ceil(notes.length / pageSize));
+  archivePage = Math.min(archivePage, totalPages);
+  const start = (archivePage - 1) * pageSize;
+  const pageNotes = notes.slice(start, start + pageSize);
 
-if (topicSelect) {
-  topicSelect.addEventListener("change", () => {
-    const selected = topicSelect.value;
-    topicTabs.forEach((item) => item.classList.toggle("is-active", item.dataset.topic === selected));
-    filterArchive();
-  });
+  if (pageNotes.length === 0) {
+    archiveGrid.innerHTML = '<p class="empty-state">No notes match that search.</p>';
+  } else {
+    archiveGrid.innerHTML = pageNotes.map(noteCard).join("");
+  }
+
+  renderPagination(notes.length);
 }
 
 function selectTopic(topic) {
+  archivePage = 1;
   topicTabs.forEach((item) => item.classList.toggle("is-active", item.dataset.topic === topic));
   if (topicSelect) topicSelect.value = topic;
-  filterArchive();
+  renderArchive();
 }
 
 function applyUrlFilters() {
@@ -72,33 +119,60 @@ function applyUrlFilters() {
     return;
   }
 
-  filterArchive();
+  renderArchive();
+}
+
+if (searchForm) {
+  searchForm.addEventListener("submit", (event) => event.preventDefault());
+}
+
+if (searchInput) {
+  searchInput.addEventListener("input", () => {
+    archivePage = 1;
+    renderArchive();
+  });
+}
+
+if (topicSelect) {
+  topicSelect.addEventListener("change", () => selectTopic(topicSelect.value));
 }
 
 topicTabs.forEach((tab) => {
   tab.addEventListener("click", (event) => {
     event.preventDefault();
     selectTopic(tab.dataset.topic);
-    document.querySelector("#archive")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    const archive = document.querySelector("#archive");
+    if (archive) archive.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 });
 
-categoryChips.forEach((chip) => {
-  chip.addEventListener("click", (event) => {
+if (archiveGrid) {
+  archiveGrid.addEventListener("click", (event) => {
+    const chip = event.target.closest("[data-category-chip]");
     const archive = document.querySelector("#archive");
-    if (!archive) return;
+    if (!chip || !archive) return;
     event.preventDefault();
     selectTopic(chip.dataset.categoryChip);
     archive.scrollIntoView({ behavior: "smooth", block: "start" });
   });
-});
+}
 
-if (randomNoteLink && noteCards.length > 0) {
+if (pagination) {
+  pagination.addEventListener("click", (event) => {
+    const button = event.target.closest("button[data-page-action]");
+    if (!button) return;
+    archivePage += button.dataset.pageAction === "next" ? 1 : -1;
+    renderArchive();
+    const archive = document.querySelector("#archive");
+    if (archive) archive.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+}
+
+if (randomNoteLink && archiveNotes.length > 0) {
   randomNoteLink.addEventListener("click", (event) => {
     event.preventDefault();
-    const links = noteCards.map((card) => card.querySelector("a[href]")).filter(Boolean);
-    const randomLink = links[Math.floor(Math.random() * links.length)];
-    if (randomLink) window.location.href = randomLink.href;
+    const randomNote = archiveNotes[Math.floor(Math.random() * archiveNotes.length)];
+    if (randomNote) window.location.href = randomNote.url;
   });
 }
 
