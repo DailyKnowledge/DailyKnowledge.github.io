@@ -269,8 +269,8 @@ h1 {
 .search-field {
   display: grid;
   gap: 10px;
-  grid-template-columns: minmax(180px, 1fr) minmax(150px, 190px);
-  max-width: 360px;
+  grid-template-columns: minmax(180px, 1fr) minmax(130px, 170px) minmax(120px, 150px);
+  max-width: 560px;
   width: 100%;
 }
 

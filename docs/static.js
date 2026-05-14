@@ -1,13 +1,14 @@
 const searchForm = document.querySelector("[data-search-form]");
 const searchInput = document.querySelector("#q");
 const topicSelect = document.querySelector("[data-topic-select]");
+const pageSizeSelect = document.querySelector("[data-page-size-select]");
 const topicTabs = [...document.querySelectorAll(".topic-tab[data-topic]")];
 const archiveGrid = document.querySelector(".archive-grid");
 const pagination = document.querySelector("[data-archive-pagination]");
 const randomNoteLink = document.querySelector("[data-random-note]");
 const randomNotePageLink = document.querySelector("[data-random-note-page]");
 const archiveNotes = Array.isArray(window.KNOWLEDGE_ARCHIVE_NOTES) ? window.KNOWLEDGE_ARCHIVE_NOTES : [];
-const pageSize = Number(window.KNOWLEDGE_ARCHIVE_PAGE_SIZE || 9);
+let pageSize = Number(window.KNOWLEDGE_ARCHIVE_PAGE_SIZE || 9);
 
 let archivePage = 1;
 
@@ -109,9 +110,15 @@ function applyUrlFilters() {
   const params = new URLSearchParams(window.location.search);
   const topic = params.get("topic");
   const query = params.get("q");
+  const limit = Number(params.get("limit"));
 
   if (query && searchInput) {
     searchInput.value = query;
+  }
+
+  if (limit && pageSizeSelect) {
+    pageSize = limit;
+    pageSizeSelect.value = String(limit);
   }
 
   if (topic && topicTabs.some((tab) => tab.dataset.topic === topic)) {
@@ -135,6 +142,15 @@ if (searchInput) {
 
 if (topicSelect) {
   topicSelect.addEventListener("change", () => selectTopic(topicSelect.value));
+}
+
+if (pageSizeSelect) {
+  pageSizeSelect.value = String(pageSize);
+  pageSizeSelect.addEventListener("change", () => {
+    pageSize = Number(pageSizeSelect.value);
+    archivePage = 1;
+    renderArchive();
+  });
 }
 
 topicTabs.forEach((tab) => {
