@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 933" role="img" aria-labelledby="title desc">
+  <title id="title">Compound interest curve</title>
+  <desc id="desc">A clean chart showing compounding growth rising slowly at first and then accelerating.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fbfaf6"/>
+      <stop offset="1" stop-color="#e8f4ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="20" flood-color="#16211f" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <rect width="1400" height="933" fill="url(#bg)"/>
+  <rect x="160" y="126" width="1080" height="680" rx="18" fill="#fff" filter="url(#shadow)"/>
+  <line x1="260" y1="686" x2="1120" y2="686" stroke="#16211f" stroke-width="5" stroke-linecap="round"/>
+  <line x1="260" y1="686" x2="260" y2="246" stroke="#16211f" stroke-width="5" stroke-linecap="round"/>
+  <path d="M300 650 C 438 642, 560 616, 662 552 C 780 478, 878 360, 1060 248" fill="none" stroke="#1f7a8c" stroke-width="18" stroke-linecap="round"/>
+  <path d="M300 650 C 438 642, 560 616, 662 552 C 780 478, 878 360, 1060 248" fill="none" stroke="#8ec8b6" stroke-width="5" stroke-linecap="round"/>
+  <path d="M300 650 L 1060 650" stroke="#dfe4dc" stroke-width="3" stroke-dasharray="12 14"/>
+  <path d="M300 650 L 1060 248" stroke="#c75c4a" stroke-width="5" stroke-linecap="round" opacity="0.45"/>
+  <circle cx="424" cy="638" r="18" fill="#c59838"/>
+  <circle cx="662" cy="552" r="18" fill="#c59838"/>
+  <circle cx="900" cy="340" r="18" fill="#c59838"/>
+  <text x="222" y="202" fill="#2f665b" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">COMPOUND INTEREST</text>
+  <text x="260" y="744" fill="#5c6b66" font-family="Inter, Arial, sans-serif" font-size="34">time</text>
+  <text x="184" y="300" fill="#5c6b66" font-family="Inter, Arial, sans-serif" font-size="34" transform="rotate(-90 184 300)">growth</text>
+  <text x="342" y="588" fill="#16211f" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="700">slow start</text>
+  <text x="790" y="278" fill="#16211f" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="700">growth builds on growth</text>
+  <rect x="842" y="544" width="260" height="74" rx="12" fill="#f6efe5" stroke="#c59838" stroke-width="4"/>
+  <text x="972" y="592" text-anchor="middle" fill="#16211f" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700">stay in the process</text>
+</svg>
