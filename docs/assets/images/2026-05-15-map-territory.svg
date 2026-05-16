@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 933" role="img" aria-labelledby="title desc">
+  <title id="title">Map and territory</title>
+  <desc id="desc">A folded map overlaying a landscape, showing the difference between a representation and reality.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#e9f5f7"/>
+      <stop offset="1" stop-color="#fbfaf6"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="20" stdDeviation="18" flood-color="#16211f" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+  <rect width="1400" height="933" fill="url(#sky)"/>
+  <path d="M0 598 C 210 488, 386 516, 536 434 C 676 358, 778 302, 932 404 C 1102 516, 1242 478, 1400 390 L 1400 933 L 0 933 Z" fill="#6b8f71"/>
+  <path d="M0 680 C 220 580, 420 604, 590 548 C 760 492, 908 472, 1108 570 C 1224 626, 1312 618, 1400 572 L 1400 933 L 0 933 Z" fill="#2f665b"/>
+  <path d="M210 710 L 1190 710" stroke="#fbfaf6" stroke-width="6" stroke-linecap="round" opacity="0.65"/>
+  <g filter="url(#shadow)">
+    <path d="M310 180 L 612 230 L 612 728 L 310 674 Z" fill="#fff8ea" stroke="#c59838" stroke-width="4"/>
+    <path d="M612 230 L 870 176 L 870 674 L 612 728 Z" fill="#fffdf5" stroke="#c59838" stroke-width="4"/>
+    <path d="M870 176 L 1092 242 L 1092 730 L 870 674 Z" fill="#fff8ea" stroke="#c59838" stroke-width="4"/>
+  </g>
+  <path d="M372 320 C 478 310, 506 388, 610 366 C 718 342, 746 262, 846 282 C 960 304, 974 392, 1060 380" fill="none" stroke="#1f7a8c" stroke-width="14" stroke-linecap="round"/>
+  <path d="M400 556 C 502 480, 602 536, 680 486 C 768 430, 842 468, 922 520 C 988 562, 1038 550, 1060 534" fill="none" stroke="#c75c4a" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="746" cy="362" r="22" fill="#16211f"/>
+  <path d="M746 304 C 704 350, 704 406, 746 458 C 788 406, 788 350, 746 304 Z" fill="none" stroke="#16211f" stroke-width="8"/>
+  <text x="216" y="128" fill="#2f665b" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">MAP ≠ TERRITORY</text>
+  <text x="226" y="806" fill="#fbfaf6" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="700">models simplify the world, but they are not the world</text>
+</svg>
