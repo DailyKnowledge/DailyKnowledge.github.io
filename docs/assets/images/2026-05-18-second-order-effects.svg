@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 933" role="img" aria-labelledby="title desc">
+  <title id="title">Second-order effects</title>
+  <desc id="desc">A diagram showing a first consequence leading to later second-order consequences.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fbfaf6"/>
+      <stop offset="1" stop-color="#edf5f2"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="20" flood-color="#16211f" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <rect width="1400" height="933" fill="url(#bg)"/>
+  <rect x="160" y="126" width="1080" height="680" rx="18" fill="#fff" filter="url(#shadow)"/>
+  <text x="220" y="204" fill="#2f665b" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">SECOND-ORDER EFFECTS</text>
+  <circle cx="340" cy="468" r="92" fill="#eef6f3" stroke="#1f7a8c" stroke-width="8"/>
+  <text x="340" y="458" text-anchor="middle" fill="#16211f" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">decision</text>
+  <text x="340" y="494" text-anchor="middle" fill="#5c6b66" font-family="Inter, Arial, sans-serif" font-size="24">now</text>
+  <path d="M438 468 L 578 468" stroke="#1f7a8c" stroke-width="12" stroke-linecap="round"/>
+  <path d="M578 468 L 534 432 L 534 504 Z" fill="#1f7a8c"/>
+  <rect x="602" y="392" width="250" height="152" rx="14" fill="#f6efe5" stroke="#c59838" stroke-width="6"/>
+  <text x="727" y="456" text-anchor="middle" fill="#16211f" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">first result</text>
+  <text x="727" y="494" text-anchor="middle" fill="#5c6b66" font-family="Inter, Arial, sans-serif" font-size="24">immediate</text>
+  <path d="M854 468 C 950 438, 970 340, 1060 312" fill="none" stroke="#c75c4a" stroke-width="12" stroke-linecap="round"/>
+  <path d="M854 468 C 958 506, 974 610, 1060 642" fill="none" stroke="#c75c4a" stroke-width="12" stroke-linecap="round"/>
+  <path d="M1060 312 L 1010 300 L 1040 350 Z" fill="#c75c4a"/>
+  <path d="M1060 642 L 1010 656 L 1040 604 Z" fill="#c75c4a"/>
+  <rect x="1068" y="238" width="210" height="128" rx="14" fill="#f8eeee" stroke="#c75c4a" stroke-width="5"/>
+  <text x="1173" y="292" text-anchor="middle" fill="#16211f" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="700">incentives</text>
+  <text x="1173" y="324" text-anchor="middle" fill="#5c6b66" font-family="Inter, Arial, sans-serif" font-size="22">change</text>
+  <rect x="1068" y="588" width="210" height="128" rx="14" fill="#f8eeee" stroke="#c75c4a" stroke-width="5"/>
+  <text x="1173" y="642" text-anchor="middle" fill="#16211f" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="700">new costs</text>
+  <text x="1173" y="674" text-anchor="middle" fill="#5c6b66" font-family="Inter, Arial, sans-serif" font-size="22">appear</text>
+  <text x="256" y="742" fill="#5c6b66" font-family="Inter, Arial, sans-serif" font-size="30">ask what happens after the first effect</text>
+</svg>
