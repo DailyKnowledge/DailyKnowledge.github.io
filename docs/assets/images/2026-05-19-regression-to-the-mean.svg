@@ -15,22 +15,24 @@
   <text x="220" y="204" fill="#2f665b" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">REGRESSION TO THE MEAN</text>
   <line x1="260" y1="650" x2="1140" y2="650" stroke="#16211f" stroke-width="5" stroke-linecap="round"/>
   <line x1="260" y1="650" x2="260" y2="252" stroke="#16211f" stroke-width="5" stroke-linecap="round"/>
-  <line x1="280" y1="456" x2="1120" y2="456" stroke="#1f7a8c" stroke-width="8" stroke-linecap="round" stroke-dasharray="18 18"/>
-  <text x="932" y="426" fill="#1f7a8c" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">average</text>
-  <circle cx="400" cy="280" r="26" fill="#c75c4a"/>
-  <circle cx="540" cy="386" r="24" fill="#c59838"/>
-  <circle cx="680" cy="438" r="24" fill="#1f7a8c"/>
-  <circle cx="820" cy="492" r="24" fill="#1f7a8c"/>
-  <circle cx="960" cy="604" r="26" fill="#c75c4a"/>
-  <circle cx="1100" cy="520" r="24" fill="#c59838"/>
-  <path d="M400 280 C 454 322, 488 354, 540 386" fill="none" stroke="#c75c4a" stroke-width="8" stroke-linecap="round"/>
-  <path d="M540 386 C 590 420, 624 430, 680 438" fill="none" stroke="#c59838" stroke-width="8" stroke-linecap="round"/>
-  <path d="M960 604 C 1008 574, 1048 548, 1100 520" fill="none" stroke="#c75c4a" stroke-width="8" stroke-linecap="round"/>
-  <path d="M413 304 L 456 318 L 428 344" fill="none" stroke="#c75c4a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M977 582 L 1022 570 L 1010 614" fill="none" stroke="#c75c4a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-  <rect x="332" y="212" width="150" height="52" rx="12" fill="#f8eeee" stroke="#c75c4a" stroke-width="4"/>
-  <text x="407" y="247" text-anchor="middle" fill="#16211f" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">extreme high</text>
-  <rect x="880" y="624" width="158" height="52" rx="12" fill="#f8eeee" stroke="#c75c4a" stroke-width="4"/>
-  <text x="959" y="659" text-anchor="middle" fill="#16211f" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">extreme low</text>
-  <text x="260" y="724" fill="#5c6b66" font-family="Inter, Arial, sans-serif" font-size="32">one unusual result often moves back toward normal</text>
+  <line x1="300" y1="456" x2="1110" y2="456" stroke="#1f7a8c" stroke-width="8" stroke-linecap="round" stroke-dasharray="18 18"/>
+  <text x="918" y="426" fill="#1f7a8c" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">average line</text>
+
+  <path d="M392 292 C 486 340, 574 392, 672 438" fill="none" stroke="#c75c4a" stroke-width="16" stroke-linecap="round"/>
+  <path d="M392 292 C 486 340, 574 392, 672 438" fill="none" stroke="#f2c1b8" stroke-width="6" stroke-linecap="round"/>
+  <path d="M948 610 C 1008 570, 1058 540, 1110 512" fill="none" stroke="#c59838" stroke-width="16" stroke-linecap="round"/>
+  <path d="M948 610 C 1008 570, 1058 540, 1110 512" fill="none" stroke="#f0d9a5" stroke-width="6" stroke-linecap="round"/>
+
+  <circle cx="392" cy="292" r="28" fill="#c75c4a"/>
+  <circle cx="530" cy="368" r="24" fill="#c59838"/>
+  <circle cx="672" cy="438" r="24" fill="#1f7a8c"/>
+  <circle cx="812" cy="476" r="24" fill="#1f7a8c"/>
+  <circle cx="948" cy="610" r="28" fill="#c75c4a"/>
+  <circle cx="1110" cy="512" r="24" fill="#c59838"/>
+
+  <rect x="314" y="218" width="166" height="52" rx="12" fill="#f8eeee" stroke="#c75c4a" stroke-width="4"/>
+  <text x="397" y="253" text-anchor="middle" fill="#16211f" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">extreme high</text>
+  <rect x="864" y="632" width="166" height="52" rx="12" fill="#f8eeee" stroke="#c75c4a" stroke-width="4"/>
+  <text x="947" y="667" text-anchor="middle" fill="#16211f" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">extreme low</text>
+  <text x="260" y="724" fill="#5c6b66" font-family="Inter, Arial, sans-serif" font-size="32">unusual measurements tend to move back toward normal</text>
 </svg>
