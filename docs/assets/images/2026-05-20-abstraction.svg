@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 933" role="img" aria-labelledby="title desc">
+  <title id="title">Abstraction</title>
+  <desc id="desc">A layered diagram showing a simple interface above hidden implementation details.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fbfaf6"/>
+      <stop offset="1" stop-color="#edf5f2"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="20" flood-color="#16211f" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <rect width="1400" height="933" fill="url(#bg)"/>
+  <rect x="160" y="126" width="1080" height="680" rx="18" fill="#fff" filter="url(#shadow)"/>
+  <text x="220" y="204" fill="#2f665b" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">ABSTRACTION</text>
+
+  <rect x="276" y="266" width="848" height="142" rx="18" fill="#eef6f3" stroke="#1f7a8c" stroke-width="7"/>
+  <text x="700" y="322" text-anchor="middle" fill="#16211f" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">simple interface</text>
+  <text x="700" y="368" text-anchor="middle" fill="#5c6b66" font-family="Inter, Arial, sans-serif" font-size="28">what I need to use right now</text>
+
+  <path d="M350 458 H1050" stroke="#c59838" stroke-width="10" stroke-linecap="round" stroke-dasharray="22 20"/>
+  <text x="700" y="444" text-anchor="middle" fill="#9a6b16" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="700">details hidden below this line</text>
+
+  <rect x="276" y="512" width="250" height="118" rx="14" fill="#f6efe5" stroke="#c59838" stroke-width="5"/>
+  <text x="401" y="562" text-anchor="middle" fill="#16211f" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="700">data</text>
+  <text x="401" y="598" text-anchor="middle" fill="#5c6b66" font-family="Inter, Arial, sans-serif" font-size="23">messy inputs</text>
+
+  <rect x="575" y="512" width="250" height="118" rx="14" fill="#f8eeee" stroke="#c75c4a" stroke-width="5"/>
+  <text x="700" y="562" text-anchor="middle" fill="#16211f" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="700">logic</text>
+  <text x="700" y="598" text-anchor="middle" fill="#5c6b66" font-family="Inter, Arial, sans-serif" font-size="23">rules and tradeoffs</text>
+
+  <rect x="874" y="512" width="250" height="118" rx="14" fill="#eef1f6" stroke="#607a9a" stroke-width="5"/>
+  <text x="999" y="562" text-anchor="middle" fill="#16211f" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="700">constraints</text>
+  <text x="999" y="598" text-anchor="middle" fill="#5c6b66" font-family="Inter, Arial, sans-serif" font-size="23">limits and edge cases</text>
+
+  <path d="M401 512 L 628 408" stroke="#1f7a8c" stroke-width="8" stroke-linecap="round" opacity="0.5"/>
+  <path d="M700 512 L 700 408" stroke="#1f7a8c" stroke-width="8" stroke-linecap="round" opacity="0.5"/>
+  <path d="M999 512 L 772 408" stroke="#1f7a8c" stroke-width="8" stroke-linecap="round" opacity="0.5"/>
+
+  <text x="260" y="724" fill="#5c6b66" font-family="Inter, Arial, sans-serif" font-size="32">simplify the surface, but know what is underneath</text>
+</svg>
