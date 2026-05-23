@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 933" role="img" aria-labelledby="title desc">
+  <title id="title">Symbiosis</title>
+  <desc id="desc">A diagram showing a plant and fungi connected through shared exchange.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fbfaf6"/>
+      <stop offset="1" stop-color="#edf5f2"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="20" flood-color="#16211f" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <rect width="1400" height="933" fill="url(#bg)"/>
+  <rect x="160" y="126" width="1080" height="680" rx="18" fill="#fff" filter="url(#shadow)"/>
+  <text x="220" y="204" fill="#2f665b" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">SYMBIOSIS</text>
+
+  <line x1="250" y1="594" x2="1150" y2="594" stroke="#d8c7a3" stroke-width="10" stroke-linecap="round"/>
+  <rect x="250" y="596" width="900" height="106" fill="#f6efe5" opacity="0.9"/>
+
+  <path d="M704 592 C 682 520, 668 454, 704 396" fill="none" stroke="#2f665b" stroke-width="18" stroke-linecap="round"/>
+  <path d="M704 404 C 642 356, 618 304, 636 252 C 692 272, 728 322, 704 404" fill="#8ec8b6" stroke="#2f665b" stroke-width="7"/>
+  <path d="M704 414 C 780 376, 836 334, 850 266 C 778 268, 724 320, 704 414" fill="#b7d9a8" stroke="#2f665b" stroke-width="7"/>
+  <path d="M704 432 C 648 430, 596 406, 566 354 C 628 334, 686 368, 704 432" fill="#c9dfb6" stroke="#2f665b" stroke-width="7"/>
+  <text x="704" y="238" text-anchor="middle" fill="#16211f" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="700">plant</text>
+
+  <path d="M704 594 C 664 638, 604 662, 530 682" fill="none" stroke="#7a5b42" stroke-width="12" stroke-linecap="round"/>
+  <path d="M704 594 C 754 642, 816 668, 898 690" fill="none" stroke="#7a5b42" stroke-width="12" stroke-linecap="round"/>
+  <path d="M704 594 C 692 654, 692 692, 706 734" fill="none" stroke="#7a5b42" stroke-width="12" stroke-linecap="round"/>
+  <path d="M530 682 C 470 664, 430 642, 380 616" fill="none" stroke="#c59838" stroke-width="8" stroke-linecap="round"/>
+  <path d="M898 690 C 954 662, 1000 636, 1054 614" fill="none" stroke="#c59838" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="380" cy="616" r="24" fill="#c59838"/>
+  <circle cx="1054" cy="614" r="24" fill="#c59838"/>
+  <circle cx="706" cy="734" r="22" fill="#c59838"/>
+  <text x="706" y="786" text-anchor="middle" fill="#7a5b42" font-family="Inter, Arial, sans-serif" font-size="29" font-weight="700">fungal network</text>
+
+  <path d="M470 474 C 548 442, 620 446, 674 486" fill="none" stroke="#1f7a8c" stroke-width="10" stroke-linecap="round"/>
+  <path d="M674 486 L626 492 L650 450 Z" fill="#1f7a8c"/>
+  <text x="438" y="454" fill="#1f7a8c" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="700">water + minerals</text>
+
+  <path d="M922 474 C 846 440, 774 446, 724 486" fill="none" stroke="#c75c4a" stroke-width="10" stroke-linecap="round"/>
+  <path d="M724 486 L772 492 L748 450 Z" fill="#c75c4a"/>
+  <text x="892" y="454" fill="#c75c4a" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="700">sugars</text>
+
+  <text x="260" y="742" fill="#5c6b66" font-family="Inter, Arial, sans-serif" font-size="32">different lives can become one shared system</text>
+</svg>
