@@ -31,7 +31,7 @@
   <circle cx="411" cy="481" r="25" fill="#d94f45"/>
   <circle cx="464" cy="481" r="25" fill="#d94f45"/>
 
-  <path d="M615 421 C 682 364, 754 364, 823 421" fill="none" stroke="#2f5f86" stroke-width="12" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M615 448 C 682 398, 754 398, 823 448" fill="none" stroke="#2f5f86" stroke-width="12" stroke-linecap="round" marker-end="url(#arrow)"/>
   <text x="720" y="342" text-anchor="middle" fill="#2f5f86" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">more likely direction</text>
 
   <rect x="864" y="264" width="332" height="314" rx="16" fill="#fff5ed" stroke="#dbc5ae" stroke-width="4"/>
