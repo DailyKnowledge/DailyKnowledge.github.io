@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 933" role="img" aria-labelledby="title desc">
+  <title id="title">Path Dependence</title>
+  <desc id="desc">A diagram showing an early choice making one path wide and easy while another path becomes narrow and costly.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f8fbff"/>
+      <stop offset="1" stop-color="#eef6f0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="20" flood-color="#17212b" flood-opacity="0.14"/>
+    </filter>
+    <marker id="arrow-blue" markerWidth="15" markerHeight="15" refX="11" refY="7.5" orient="auto">
+      <path d="M1 1 L13 7.5 L1 14 Z" fill="#2d6780"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="15" markerHeight="15" refX="11" refY="7.5" orient="auto">
+      <path d="M1 1 L13 7.5 L1 14 Z" fill="#c95b4d"/>
+    </marker>
+  </defs>
+  <rect width="1400" height="933" fill="url(#bg)"/>
+  <rect x="160" y="126" width="1080" height="680" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+  <text x="220" y="204" fill="#2d6780" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">PATH DEPENDENCE</text>
+
+  <circle cx="330" cy="486" r="70" fill="#fff4ed" stroke="#d9b5a8" stroke-width="5"/>
+  <text x="330" y="478" text-anchor="middle" fill="#27313d" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="700">early</text>
+  <text x="330" y="514" text-anchor="middle" fill="#27313d" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="700">choice</text>
+
+  <path d="M400 462 C 545 365, 706 314, 894 326 C 998 333, 1070 369, 1124 424" fill="none" stroke="#2d6780" stroke-width="44" stroke-linecap="round" opacity="0.28"/>
+  <path d="M400 462 C 545 365, 706 314, 894 326 C 998 333, 1070 369, 1124 424" fill="none" stroke="#2d6780" stroke-width="14" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
+
+  <path d="M400 512 C 550 596, 708 646, 892 622 C 1005 607, 1084 544, 1128 484" fill="none" stroke="#c95b4d" stroke-width="18" stroke-linecap="round" stroke-dasharray="18 24" marker-end="url(#arrow-red)"/>
+
+  <rect x="492" y="274" width="268" height="88" rx="16" fill="#edf7f8" stroke="#aacdd4" stroke-width="4"/>
+  <text x="626" y="310" text-anchor="middle" fill="#2d6780" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="700">reinforced path</text>
+  <text x="626" y="344" text-anchor="middle" fill="#66747b" font-family="Inter, Arial, sans-serif" font-size="22">tools and habits build up</text>
+
+  <rect x="550" y="656" width="302" height="88" rx="16" fill="#fff3ef" stroke="#dfb5ad" stroke-width="4"/>
+  <text x="701" y="692" text-anchor="middle" fill="#b94f43" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="700">harder switch</text>
+  <text x="701" y="726" text-anchor="middle" fill="#66747b" font-family="Inter, Arial, sans-serif" font-size="22">costs rise over time</text>
+
+  <circle cx="956" cy="330" r="16" fill="#2d6780"/>
+  <circle cx="1018" cy="356" r="16" fill="#2d6780"/>
+  <circle cx="1068" cy="392" r="16" fill="#2d6780"/>
+
+  <circle cx="920" cy="617" r="12" fill="#c95b4d"/>
+  <circle cx="980" cy="596" r="12" fill="#c95b4d"/>
+  <circle cx="1034" cy="558" r="12" fill="#c95b4d"/>
+
+  <line x1="300" y1="718" x2="1100" y2="718" stroke="#d4dde2" stroke-width="6" stroke-linecap="round"/>
+  <text x="300" y="768" fill="#66747b" font-family="Inter, Arial, sans-serif" font-size="25">start</text>
+  <text x="1000" y="768" fill="#66747b" font-family="Inter, Arial, sans-serif" font-size="25">later options</text>
+
+  <text x="700" y="820" text-anchor="middle" fill="#5d6870" font-family="Inter, Arial, sans-serif" font-size="32">the path already taken changes the cost of the next step</text>
+</svg>
