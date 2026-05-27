@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 933" role="img" aria-labelledby="title desc">
+  <title id="title">Scale Invariance</title>
+  <desc id="desc">A diagram showing a branching pattern repeated at large, medium, and small scales.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f8fbff"/>
+      <stop offset="1" stop-color="#f2f7ee"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="20" flood-color="#17212b" flood-opacity="0.14"/>
+    </filter>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto">
+      <path d="M1 1 L12 7 L1 13 Z" fill="#2f6675"/>
+    </marker>
+  </defs>
+  <rect width="1400" height="933" fill="url(#bg)"/>
+  <rect x="160" y="126" width="1080" height="680" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+  <text x="220" y="204" fill="#2f6675" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">SCALE INVARIANCE</text>
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M700 692 L700 474" stroke="#2f6675" stroke-width="18"/>
+    <path d="M700 474 L562 346 M700 474 L838 346" stroke="#2f6675" stroke-width="14"/>
+    <path d="M562 346 L482 284 M562 346 L548 248 M838 346 L918 284 M838 346 L852 248" stroke="#2f6675" stroke-width="10"/>
+    <path d="M482 284 L432 254 M482 284 L466 226 M548 248 L514 202 M548 248 L586 206 M918 284 L968 254 M918 284 L934 226 M852 248 L886 202 M852 248 L814 206" stroke="#2f6675" stroke-width="7"/>
+  </g>
+
+  <circle cx="700" cy="692" r="26" fill="#d96554"/>
+  <circle cx="700" cy="474" r="18" fill="#d96554"/>
+  <circle cx="562" cy="346" r="14" fill="#d96554"/>
+  <circle cx="838" cy="346" r="14" fill="#d96554"/>
+
+  <rect x="244" y="276" width="220" height="164" rx="16" fill="#f0f7f8" stroke="#aacbd1" stroke-width="4"/>
+  <path d="M354 402 L354 344 M354 344 L320 312 M354 344 L388 312 M320 312 L300 296 M320 312 L318 288 M388 312 L408 296 M388 312 L390 288" fill="none" stroke="#2f6675" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="354" y="476" text-anchor="middle" fill="#27313d" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="700">small scale</text>
+
+  <rect x="936" y="276" width="220" height="164" rx="16" fill="#fff4ef" stroke="#dfb5ad" stroke-width="4"/>
+  <path d="M1046 402 L1046 344 M1046 344 L1012 312 M1046 344 L1080 312 M1012 312 L992 296 M1012 312 L1010 288 M1080 312 L1100 296 M1080 312 L1082 288" fill="none" stroke="#c95b4d" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="1046" y="476" text-anchor="middle" fill="#27313d" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="700">same form</text>
+
+  <path d="M474 364 C 536 430, 596 454, 648 460" fill="none" stroke="#d5dde1" stroke-width="8" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M926 364 C 864 430, 804 454, 752 460" fill="none" stroke="#d5dde1" stroke-width="8" stroke-linecap="round" marker-end="url(#arrow)"/>
+
+  <rect x="452" y="718" width="496" height="72" rx="16" fill="#f7fafb" stroke="#d4dde2" stroke-width="4"/>
+  <text x="700" y="764" text-anchor="middle" fill="#5d6870" font-family="Inter, Arial, sans-serif" font-size="29">zoom changes size, not the organizing rule</text>
+
+  <text x="700" y="842" text-anchor="middle" fill="#5d6870" font-family="Inter, Arial, sans-serif" font-size="32">a repeated structure can reveal what survives across levels</text>
+</svg>
