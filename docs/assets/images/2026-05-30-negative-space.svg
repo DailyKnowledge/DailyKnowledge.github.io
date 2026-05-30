@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 933" role="img" aria-labelledby="title desc">
+  <title id="title">Negative Space</title>
+  <desc id="desc">A diagram showing empty space shaping attention around a central form.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f9fbfc"/>
+      <stop offset="1" stop-color="#f3f2ec"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="20" flood-color="#18212b" flood-opacity="0.14"/>
+    </filter>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto">
+      <path d="M1 1 L12 7 L1 13 Z" fill="#2e6773"/>
+    </marker>
+  </defs>
+  <rect width="1400" height="933" fill="url(#bg)"/>
+  <rect x="160" y="126" width="1080" height="680" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+  <text x="220" y="204" fill="#2e6773" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">NEGATIVE SPACE</text>
+
+  <rect x="284" y="282" width="286" height="286" rx="18" fill="#2e6773"/>
+  <rect x="830" y="282" width="286" height="286" rx="18" fill="#2e6773"/>
+  <rect x="570" y="282" width="260" height="286" fill="#ffffff"/>
+  <path d="M642 568 C 650 506, 686 464, 732 424 C 686 384, 650 344, 642 282" fill="#ffffff"/>
+  <path d="M758 568 C 750 506, 714 464, 668 424 C 714 384, 750 344, 758 282" fill="#ffffff"/>
+
+  <circle cx="700" cy="424" r="78" fill="#ffffff" stroke="#d6dee2" stroke-width="5"/>
+  <text x="700" y="416" text-anchor="middle" fill="#2e6773" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">empty</text>
+  <text x="700" y="452" text-anchor="middle" fill="#2e6773" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">space</text>
+
+  <path d="M506 634 C 560 596, 616 574, 672 552" fill="none" stroke="#d96554" stroke-width="8" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M894 634 C 840 596, 784 574, 728 552" fill="none" stroke="#d96554" stroke-width="8" stroke-linecap="round" marker-end="url(#arrow)"/>
+
+  <rect x="270" y="642" width="312" height="92" rx="16" fill="#fff3ef" stroke="#dfb6ad" stroke-width="4"/>
+  <text x="426" y="680" text-anchor="middle" fill="#b94f43" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="700">less crowding</text>
+  <text x="426" y="716" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="22">attention has a path</text>
+
+  <rect x="818" y="642" width="312" height="92" rx="16" fill="#eef7f8" stroke="#aacbd2" stroke-width="4"/>
+  <text x="974" y="680" text-anchor="middle" fill="#2e6773" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="700">clearer shape</text>
+  <text x="974" y="716" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="22">gaps define edges</text>
+
+  <line x1="384" y1="250" x2="1016" y2="250" stroke="#d4dde2" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="384" cy="250" r="12" fill="#d96554"/>
+  <circle cx="1016" cy="250" r="12" fill="#d96554"/>
+  <text x="700" y="246" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="24">the surrounding field changes what the center means</text>
+
+  <text x="700" y="820" text-anchor="middle" fill="#5d6870" font-family="Inter, Arial, sans-serif" font-size="32">absence can organize attention as strongly as presence</text>
+</svg>
