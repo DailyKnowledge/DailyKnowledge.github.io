@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 933" role="img" aria-labelledby="title desc">
+  <title id="title">Hysteresis</title>
+  <desc id="desc">A diagram showing a loop where the response depends on whether input is rising or falling.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f8fbff"/>
+      <stop offset="1" stop-color="#f3f6ee"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="20" flood-color="#17212b" flood-opacity="0.14"/>
+    </filter>
+    <marker id="arrow-blue" markerWidth="15" markerHeight="15" refX="11" refY="7.5" orient="auto">
+      <path d="M1 1 L13 7.5 L1 14 Z" fill="#2e6678"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="15" markerHeight="15" refX="11" refY="7.5" orient="auto">
+      <path d="M1 1 L13 7.5 L1 14 Z" fill="#c95b4d"/>
+    </marker>
+  </defs>
+  <rect width="1400" height="933" fill="url(#bg)"/>
+  <rect x="160" y="126" width="1080" height="680" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+  <text x="220" y="204" fill="#2e6678" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">HYSTERESIS</text>
+
+  <line x1="284" y1="662" x2="1128" y2="662" stroke="#d1d9de" stroke-width="6" stroke-linecap="round"/>
+  <line x1="284" y1="260" x2="284" y2="662" stroke="#d1d9de" stroke-width="6" stroke-linecap="round"/>
+  <text x="700" y="720" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="25">input</text>
+  <text x="236" y="464" text-anchor="middle" transform="rotate(-90 236 464)" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="25">response</text>
+
+  <path d="M390 598 C 500 564, 552 468, 634 390 C 724 304, 862 292, 1010 332" fill="none" stroke="#2e6678" stroke-width="16" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
+  <path d="M1010 410 C 896 450, 840 548, 750 610 C 640 686, 510 672, 390 598" fill="none" stroke="#c95b4d" stroke-width="16" stroke-linecap="round" marker-end="url(#arrow-red)"/>
+
+  <circle cx="390" cy="598" r="18" fill="#2e6678"/>
+  <circle cx="1010" cy="332" r="18" fill="#2e6678"/>
+  <circle cx="1010" cy="410" r="18" fill="#c95b4d"/>
+  <circle cx="390" cy="598" r="9" fill="#ffffff"/>
+
+  <rect x="430" y="274" width="270" height="94" rx="16" fill="#eef7f8" stroke="#aacbd2" stroke-width="4"/>
+  <text x="565" y="312" text-anchor="middle" fill="#2e6678" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="700">rising input</text>
+  <text x="565" y="348" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="22">one path up</text>
+
+  <rect x="760" y="520" width="290" height="94" rx="16" fill="#fff3ef" stroke="#dfb6ad" stroke-width="4"/>
+  <text x="905" y="558" text-anchor="middle" fill="#b94f43" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="700">falling input</text>
+  <text x="905" y="594" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="22">a different path back</text>
+
+  <line x1="610" y1="650" x2="610" y2="610" stroke="#d1d9de" stroke-width="5" stroke-linecap="round"/>
+  <line x1="884" y1="650" x2="884" y2="610" stroke="#d1d9de" stroke-width="5" stroke-linecap="round"/>
+  <text x="610" y="686" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="22">turn on</text>
+  <text x="884" y="686" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="22">turn off</text>
+
+  <rect x="452" y="760" width="496" height="70" rx="16" fill="#f7fafb" stroke="#d4dde2" stroke-width="4"/>
+  <text x="700" y="805" text-anchor="middle" fill="#5d6870" font-family="Inter, Arial, sans-serif" font-size="29">the same input can sit on different parts of the loop</text>
+</svg>
