@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 933" role="img" aria-labelledby="title desc">
+  <title id="title">Coordination Cost</title>
+  <desc id="desc">A diagram showing communication links multiplying as a team grows.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f8fbff"/>
+      <stop offset="1" stop-color="#f3f6ee"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="20" flood-color="#17212b" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+  <rect width="1400" height="933" fill="url(#bg)"/>
+  <rect x="160" y="126" width="1080" height="680" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+  <text x="220" y="204" fill="#2e6678" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">COORDINATION COST</text>
+
+  <rect x="246" y="284" width="332" height="312" rx="18" fill="#eef7f8" stroke="#aacbd2" stroke-width="4"/>
+  <text x="412" y="642" text-anchor="middle" fill="#27313d" font-family="Inter, Arial, sans-serif" font-size="29" font-weight="700">2 people</text>
+  <text x="412" y="680" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="24">1 communication path</text>
+
+  <line x1="354" y1="432" x2="470" y2="432" stroke="#2e6678" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="334" cy="432" r="36" fill="#d96554"/>
+  <circle cx="490" cy="432" r="36" fill="#d96554"/>
+  <text x="334" y="442" text-anchor="middle" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">A</text>
+  <text x="490" y="442" text-anchor="middle" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">B</text>
+
+  <rect x="822" y="284" width="332" height="312" rx="18" fill="#fff3ef" stroke="#dfb6ad" stroke-width="4"/>
+  <text x="988" y="642" text-anchor="middle" fill="#27313d" font-family="Inter, Arial, sans-serif" font-size="29" font-weight="700">5 people</text>
+  <text x="988" y="680" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="24">10 communication paths</text>
+
+  <g stroke="#2e6678" stroke-width="5" stroke-linecap="round" opacity="0.78">
+    <line x1="988" y1="336" x2="900" y2="408"/>
+    <line x1="988" y1="336" x2="936" y2="520"/>
+    <line x1="988" y1="336" x2="1040" y2="520"/>
+    <line x1="988" y1="336" x2="1076" y2="408"/>
+    <line x1="900" y1="408" x2="936" y2="520"/>
+    <line x1="900" y1="408" x2="1040" y2="520"/>
+    <line x1="900" y1="408" x2="1076" y2="408"/>
+    <line x1="936" y1="520" x2="1040" y2="520"/>
+    <line x1="936" y1="520" x2="1076" y2="408"/>
+    <line x1="1040" y1="520" x2="1076" y2="408"/>
+  </g>
+  <circle cx="988" cy="336" r="30" fill="#d96554"/>
+  <circle cx="900" cy="408" r="30" fill="#d96554"/>
+  <circle cx="936" cy="520" r="30" fill="#d96554"/>
+  <circle cx="1040" cy="520" r="30" fill="#d96554"/>
+  <circle cx="1076" cy="408" r="30" fill="#d96554"/>
+  <text x="988" y="345" text-anchor="middle" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">A</text>
+  <text x="900" y="417" text-anchor="middle" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">B</text>
+  <text x="936" y="529" text-anchor="middle" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">C</text>
+  <text x="1040" y="529" text-anchor="middle" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">D</text>
+  <text x="1076" y="417" text-anchor="middle" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">E</text>
+
+  <path d="M616 440 C 674 410, 728 410, 784 440" fill="none" stroke="#d1d9de" stroke-width="10" stroke-linecap="round"/>
+  <text x="700" y="390" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="26">growth adds links</text>
+  <text x="700" y="486" text-anchor="middle" fill="#b94f43" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">capacity can create overhead</text>
+
+  <rect x="408" y="746" width="584" height="72" rx="16" fill="#f7fafb" stroke="#d4dde2" stroke-width="4"/>
+  <text x="700" y="792" text-anchor="middle" fill="#5d6870" font-family="Inter, Arial, sans-serif" font-size="29">more contributors need better alignment, not just more messages</text>
+</svg>
