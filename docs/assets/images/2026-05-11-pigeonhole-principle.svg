@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 933" role="img" aria-labelledby="title desc">
+  <title id="title">Pigeonhole Principle</title>
+  <desc id="desc">A diagram showing thirteen objects placed into twelve boxes, forcing one box to contain two objects.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f8fbff"/>
+      <stop offset="1" stop-color="#f3f6ee"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="20" flood-color="#17212b" flood-opacity="0.14"/>
+    </filter>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto">
+      <path d="M1 1 L12 7 L1 13 Z" fill="#2e6678"/>
+    </marker>
+  </defs>
+  <rect width="1400" height="933" fill="url(#bg)"/>
+  <rect x="160" y="126" width="1080" height="680" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+  <text x="220" y="204" fill="#2e6678" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">PIGEONHOLE PRINCIPLE</text>
+
+  <text x="700" y="276" text-anchor="middle" fill="#27313d" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">13 objects into 12 boxes</text>
+  <text x="700" y="318" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="25">at least one box must contain more than one object</text>
+
+  <g fill="#f7fafb" stroke="#cbd8dd" stroke-width="4">
+    <rect x="268" y="400" width="118" height="96" rx="14"/>
+    <rect x="406" y="400" width="118" height="96" rx="14"/>
+    <rect x="544" y="400" width="118" height="96" rx="14"/>
+    <rect x="682" y="400" width="118" height="96" rx="14"/>
+    <rect x="820" y="400" width="118" height="96" rx="14"/>
+    <rect x="958" y="400" width="118" height="96" rx="14"/>
+    <rect x="268" y="544" width="118" height="96" rx="14"/>
+    <rect x="406" y="544" width="118" height="96" rx="14"/>
+    <rect x="544" y="544" width="118" height="96" rx="14"/>
+    <rect x="682" y="544" width="118" height="96" rx="14"/>
+    <rect x="820" y="544" width="118" height="96" rx="14"/>
+    <rect x="958" y="544" width="118" height="96" rx="14"/>
+  </g>
+
+  <g fill="#d96554">
+    <circle cx="327" cy="448" r="18"/>
+    <circle cx="465" cy="448" r="18"/>
+    <circle cx="603" cy="448" r="18"/>
+    <circle cx="741" cy="448" r="18"/>
+    <circle cx="879" cy="448" r="18"/>
+    <circle cx="1017" cy="448" r="18"/>
+    <circle cx="327" cy="592" r="18"/>
+    <circle cx="465" cy="592" r="18"/>
+    <circle cx="603" cy="592" r="18"/>
+    <circle cx="741" cy="592" r="18"/>
+    <circle cx="879" cy="592" r="18"/>
+    <circle cx="1002" cy="582" r="18"/>
+    <circle cx="1032" cy="610" r="18"/>
+  </g>
+
+  <rect x="902" y="680" width="268" height="92" rx="16" fill="#fff3ef" stroke="#dfb6ad" stroke-width="4"/>
+  <text x="1036" y="718" text-anchor="middle" fill="#b94f43" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="700">forced overlap</text>
+  <text x="1036" y="754" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="22">more objects than boxes</text>
+
+  <path d="M982 668 C 1006 642, 1016 630, 1024 612" fill="none" stroke="#d96554" stroke-width="8" stroke-linecap="round" marker-end="url(#arrow)"/>
+
+  <rect x="276" y="684" width="420" height="72" rx="16" fill="#eef7f8" stroke="#aacbd2" stroke-width="4"/>
+  <text x="486" y="730" text-anchor="middle" fill="#2e6678" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">counting alone can prove existence</text>
+
+  <text x="700" y="830" text-anchor="middle" fill="#5d6870" font-family="Inter, Arial, sans-serif" font-size="32">when items outnumber categories, repetition is unavoidable</text>
+</svg>
