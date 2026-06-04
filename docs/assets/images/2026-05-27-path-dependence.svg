@@ -33,8 +33,6 @@
   <text x="626" y="310" text-anchor="middle" fill="#2d6780" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="700">reinforced path</text>
   <text x="626" y="344" text-anchor="middle" fill="#66747b" font-family="Inter, Arial, sans-serif" font-size="22">tools and habits build up</text>
 
-  <line x1="300" y1="718" x2="1100" y2="718" stroke="#d4dde2" stroke-width="6" stroke-linecap="round"/>
-
   <rect x="550" y="656" width="302" height="88" rx="16" fill="#fff3ef" stroke="#dfb5ad" stroke-width="4"/>
   <text x="701" y="692" text-anchor="middle" fill="#b94f43" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="700">harder switch</text>
   <text x="701" y="726" text-anchor="middle" fill="#66747b" font-family="Inter, Arial, sans-serif" font-size="22">costs rise over time</text>
@@ -47,7 +45,7 @@
   <circle cx="980" cy="596" r="12" fill="#c95b4d"/>
   <circle cx="1034" cy="558" r="12" fill="#c95b4d"/>
 
-  
+  <line x1="300" y1="718" x2="1100" y2="718" stroke="#d4dde2" stroke-width="6" stroke-linecap="round"/>
   <text x="300" y="768" fill="#66747b" font-family="Inter, Arial, sans-serif" font-size="25">start</text>
   <text x="1000" y="768" fill="#66747b" font-family="Inter, Arial, sans-serif" font-size="25">later options</text>
 

@@ -9,15 +9,12 @@
     <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
       <feDropShadow dx="0" dy="22" stdDeviation="20" flood-color="#17212b" flood-opacity="0.14"/>
     </filter>
-
-<!--
     <marker id="arrow-blue" markerWidth="15" markerHeight="15" refX="11" refY="7.5" orient="auto">
       <path d="M1 1 L13 7.5 L1 14 Z" fill="#2e6678"/>
     </marker>
     <marker id="arrow-red" markerWidth="15" markerHeight="15" refX="11" refY="7.5" orient="auto">
       <path d="M1 1 L13 7.5 L1 14 Z" fill="#c95b4d"/>
     </marker>
--->
   </defs>
   <rect width="1400" height="933" fill="url(#bg)"/>
   <rect x="160" y="126" width="1080" height="680" rx="18" fill="#ffffff" filter="url(#shadow)"/>
@@ -34,9 +31,6 @@
   <path d="M568 424 C 612 390, 648 374, 688 370" fill="none" stroke="#2e6678" stroke-width="12" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
   <path d="M832 424 C 788 390, 752 374, 712 370" fill="none" stroke="#c95b4d" stroke-width="12" stroke-linecap="round" marker-end="url(#arrow-red)"/>
 
-  <path d="M592 608 C 630 572, 660 536, 680 500" fill="none" stroke="#d1d9de" stroke-width="8" stroke-linecap="round"/>
-  <path d="M808 608 C 770 572, 740 536, 720 500" fill="none" stroke="#d1d9de" stroke-width="8" stroke-linecap="round"/>
-
   <circle cx="700" cy="430" r="86" fill="#f7fafb" stroke="#d4dde2" stroke-width="5"/>
   <path d="M656 422 C 676 390, 700 390, 720 422 C 744 462, 674 462, 700 498" fill="none" stroke="#d96554" stroke-width="11" stroke-linecap="round"/>
   <text x="700" y="552" text-anchor="middle" fill="#27313d" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">tension</text>
@@ -49,7 +43,8 @@
   <text x="948" y="660" text-anchor="middle" fill="#27313d" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="700">change behavior</text>
   <text x="948" y="696" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="22">realign with values</text>
 
-
+  <path d="M592 608 C 630 572, 660 536, 680 500" fill="none" stroke="#d1d9de" stroke-width="8" stroke-linecap="round"/>
+  <path d="M808 608 C 770 572, 740 536, 720 500" fill="none" stroke="#d1d9de" stroke-width="8" stroke-linecap="round"/>
 
   <text x="700" y="812" text-anchor="middle" fill="#5d6870" font-family="Inter, Arial, sans-serif" font-size="32">discomfort can be reduced by explanation or by alignment</text>
 </svg>
