@@ -37,12 +37,14 @@
   <path d="M538 416 C 594 396, 634 388, 686 388" fill="none" stroke="#2e6678" stroke-width="12" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
   <path d="M862 476 C 806 496, 766 504, 714 504" fill="none" stroke="#c95b4d" stroke-width="12" stroke-linecap="round" marker-end="url(#arrow-red)"/>
 
+  <path d="M388 558 C 486 620, 558 658, 656 666" fill="none" stroke="#d1d9de" stroke-width="8" stroke-linecap="round"/>
+  <path d="M1012 558 C 914 620, 842 658, 744 666" fill="none" stroke="#d1d9de" stroke-width="8" stroke-linecap="round"/>
+
   <rect x="566" y="604" width="268" height="96" rx="16" fill="#f7fafb" stroke="#d4dde2" stroke-width="4"/>
   <text x="700" y="642" text-anchor="middle" fill="#27313d" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="700">preference filter</text>
   <text x="700" y="678" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="22">agreement feels easier to trust</text>
 
-  <path d="M388 558 C 486 620, 558 658, 656 666" fill="none" stroke="#d1d9de" stroke-width="8" stroke-linecap="round"/>
-  <path d="M1012 558 C 914 620, 842 658, 744 666" fill="none" stroke="#d1d9de" stroke-width="8" stroke-linecap="round"/>
+
 
   <text x="700" y="814" text-anchor="middle" fill="#5d6870" font-family="Inter, Arial, sans-serif" font-size="32">what agrees with me can feel truer than what challenges me</text>
 </svg>
