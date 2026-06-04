@@ -53,5 +53,5 @@
   <path d="M560 602 C 632 650, 740 650, 820 592" fill="none" stroke="#d1d9de" stroke-width="9" stroke-linecap="round" stroke-dasharray="18 18"/>
   <text x="700" y="632" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="24">temporary decline</text>
 
-  <text x="700" y="818" text-anchor="middle" fill="#5d6870" font-family="Inter, Arial, sans-serif" font-size="32">small improvements can trap a system below a better solution</text>
+  <text x="700" y="790" text-anchor="middle" fill="#5d6870" font-family="Inter, Arial, sans-serif" font-size="32">small improvements can trap a system below a better solution</text>
 </svg>

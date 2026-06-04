@@ -63,5 +63,5 @@
   <rect x="276" y="684" width="420" height="72" rx="16" fill="#eef7f8" stroke="#aacbd2" stroke-width="4"/>
   <text x="486" y="730" text-anchor="middle" fill="#2e6678" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">counting alone can prove existence</text>
 
-  <text x="700" y="830" text-anchor="middle" fill="#5d6870" font-family="Inter, Arial, sans-serif" font-size="32">when items outnumber categories, repetition is unavoidable</text>
+  <text x="700" y="800" text-anchor="middle" fill="#5d6870" font-family="Inter, Arial, sans-serif" font-size="32">when items outnumber categories, repetition is unavoidable</text>
 </svg>

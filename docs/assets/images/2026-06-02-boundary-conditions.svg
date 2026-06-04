@@ -41,5 +41,5 @@
   <line x1="318" y1="260" x2="1082" y2="260" stroke="#d1d9de" stroke-width="6" stroke-linecap="round"/>
   <text x="700" y="246" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="25">same rules, different boundaries, different possible outcomes</text>
 
-  <text x="700" y="818" text-anchor="middle" fill="#5d6870" font-family="Inter, Arial, sans-serif" font-size="32">constraints are part of the problem, not an afterthought</text>
+  <text x="700" y="790" text-anchor="middle" fill="#5d6870" font-family="Inter, Arial, sans-serif" font-size="32">constraints are part of the problem, not an afterthought</text>
 </svg>

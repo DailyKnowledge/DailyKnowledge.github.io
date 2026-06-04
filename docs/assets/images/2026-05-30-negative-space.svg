@@ -43,5 +43,5 @@
   <circle cx="1016" cy="250" r="12" fill="#d96554"/>
   <text x="700" y="246" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="24">the surrounding field changes what the center means</text>
 
-  <text x="700" y="820" text-anchor="middle" fill="#5d6870" font-family="Inter, Arial, sans-serif" font-size="32">absence can organize attention as strongly as presence</text>
+  <text x="700" y="790" text-anchor="middle" fill="#5d6870" font-family="Inter, Arial, sans-serif" font-size="32">absence can organize attention as strongly as presence</text>
 </svg>

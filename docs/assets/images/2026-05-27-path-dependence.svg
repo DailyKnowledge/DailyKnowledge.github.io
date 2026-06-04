@@ -51,5 +51,5 @@
   <text x="300" y="768" fill="#66747b" font-family="Inter, Arial, sans-serif" font-size="25">start</text>
   <text x="1000" y="768" fill="#66747b" font-family="Inter, Arial, sans-serif" font-size="25">later options</text>
 
-  <text x="700" y="820" text-anchor="middle" fill="#5d6870" font-family="Inter, Arial, sans-serif" font-size="32">the path already taken changes the cost of the next step</text>
+  <text x="700" y="800" text-anchor="middle" fill="#5d6870" font-family="Inter, Arial, sans-serif" font-size="32">the path already taken changes the cost of the next step</text>
 </svg>
