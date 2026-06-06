@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 933" role="img" aria-labelledby="title desc">
+  <title id="title">The Pareto Principle (80/20 Rule)</title>
+  <desc id="desc">A diagram showing that 20% of causes lead to 80% of results.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f8fbff"/>
+      <stop offset="1" stop-color="#f4f2ec"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="20" flood-color="#17212b" flood-opacity="0.14"/>
+    </filter>
+    <marker id="arrow-teal" markerWidth="15" markerHeight="15" refX="11" refY="7.5" orient="auto">
+      <path d="M1 1 L13 7.5 L1 14 Z" fill="#1f7a8c"/>
+    </marker>
+  </defs>
+  <rect width="1400" height="933" fill="url(#bg)"/>
+  <rect x="160" y="126" width="1080" height="680" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+  
+  <text x="220" y="204" fill="#2e6678" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">THE PARETO PRINCIPLE</text>
+
+  <!-- Left Side: Causes (Inputs) -->
+  <rect x="250" y="300" width="300" height="360" rx="12" fill="#f1f4ed" stroke="#dfe4dc" stroke-width="2"/>
+  <text x="400" y="340" text-anchor="middle" fill="#5c6b66" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">CAUSES (INPUTS)</text>
+  
+  <!-- 20% High Impact -->
+  <rect x="275" y="360" width="250" height="72" rx="8" fill="#1f7a8c"/>
+  <text x="400" y="405" text-anchor="middle" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">20% VITAL FEW</text>
+  
+  <!-- 80% Low Impact -->
+  <rect x="275" y="440" width="250" height="200" rx="8" fill="#d1d9de"/>
+  <text x="400" y="540" text-anchor="middle" fill="#5c6b66" font-family="Inter, Arial, sans-serif" font-size="20">80% TRIVIAL MANY</text>
+
+  <!-- Connecting Arrows -->
+  <path d="M 525 396 C 650 396, 750 480, 850 480" fill="none" stroke="#1f7a8c" stroke-width="12" stroke-linecap="round" marker-end="url(#arrow-teal)"/>
+  <path d="M 525 540 C 650 540, 750 640, 850 640" fill="none" stroke="#6b8f71" stroke-width="6" stroke-linecap="round" stroke-dasharray="8,8"/>
+
+  <!-- Right Side: Results (Outputs) -->
+  <rect x="850" y="300" width="300" height="400" rx="12" fill="#f1f4ed" stroke="#dfe4dc" stroke-width="2"/>
+  <text x="1000" y="340" text-anchor="middle" fill="#5c6b66" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">RESULTS (OUTPUTS)</text>
+
+  <!-- 80% Results -->
+  <rect x="875" y="360" width="250" height="280" rx="8" fill="#1f7a8c"/>
+  <text x="1000" y="510" text-anchor="middle" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">80% IMPACT</text>
+  
+  <!-- 20% Results -->
+  <rect x="875" y="650" width="250" height="40" rx="8" fill="#d1d9de"/>
+  <text x="1000" y="675" text-anchor="middle" fill="#5c6b66" font-family="Inter, Arial, sans-serif" font-size="16">20%</text>
+
+  <!-- Insight Text -->
+  <text x="700" y="790" text-anchor="middle" fill="#5d6870" font-family="Inter, Arial, sans-serif" font-size="32">Focus on the 20% that produces 80% of your value.</text>
+</svg>
