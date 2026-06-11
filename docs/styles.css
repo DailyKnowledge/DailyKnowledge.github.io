@@ -319,6 +319,130 @@ h1 {
   color: #fff;
 }
 
+.archive-calendar {
+  margin-bottom: 24px;
+}
+
+.archive-months {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.archive-months button {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-weight: 760;
+  min-height: 36px;
+  padding: 0 14px;
+}
+
+.archive-months button.is-active {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: #fff;
+}
+
+.calendar-panel {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  margin-top: 12px;
+  padding: 16px;
+}
+
+.calendar-heading {
+  align-items: end;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.calendar-heading h3 {
+  font-size: 24px;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+.calendar-heading button {
+  background: #f8f6ee;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--ink);
+  cursor: pointer;
+  font-weight: 760;
+  min-height: 38px;
+  padding: 0 12px;
+}
+
+.calendar-weekdays,
+.calendar-grid {
+  display: grid;
+  gap: 6px;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+.calendar-weekdays {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+  margin-bottom: 6px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.calendar-day {
+  align-items: center;
+  aspect-ratio: 1;
+  background: #f8f6ee;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: #8a948f;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  font-weight: 760;
+  justify-content: center;
+  min-width: 0;
+  padding: 0;
+}
+
+.calendar-day.has-note {
+  background: #eef6f3;
+  border-color: #d7e9e2;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.calendar-day.has-note:hover,
+.calendar-day.is-active {
+  background: var(--teal);
+  border-color: var(--teal);
+  color: #fff;
+}
+
+.calendar-day small {
+  color: currentColor;
+  font-size: 10px;
+  line-height: 1;
+  margin-top: 3px;
+}
+
+.calendar-day:disabled {
+  opacity: 0.72;
+}
+
+.calendar-day.is-empty {
+  background: transparent;
+  border-color: transparent;
+}
+
 .archive-grid {
   display: grid;
   gap: 18px;
@@ -787,6 +911,15 @@ h1 {
   .principles article,
   .note-nav-actions {
     grid-template-columns: 1fr;
+  }
+
+  .calendar-panel {
+    padding: 12px;
+  }
+
+  .calendar-heading {
+    align-items: stretch;
+    flex-direction: column;
   }
 
   .search-field {

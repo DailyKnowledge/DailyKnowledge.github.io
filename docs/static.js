@@ -5,12 +5,19 @@ const pageSizeSelect = document.querySelector("[data-page-size-select]");
 const topicTabs = [...document.querySelectorAll(".topic-tab[data-topic]")];
 const archiveGrid = document.querySelector(".archive-grid");
 const pagination = document.querySelector("[data-archive-pagination]");
+const monthList = document.querySelector("[data-archive-months]");
+const calendarPanel = document.querySelector("[data-calendar-panel]");
+const calendarTitle = document.querySelector("[data-calendar-title]");
+const calendarGrid = document.querySelector("[data-calendar-grid]");
+const clearDayButton = document.querySelector("[data-clear-day]");
 const randomNoteLink = document.querySelector("[data-random-note]");
 const randomNotePageLink = document.querySelector("[data-random-note-page]");
 const archiveNotes = Array.isArray(window.KNOWLEDGE_ARCHIVE_NOTES) ? window.KNOWLEDGE_ARCHIVE_NOTES : [];
 let pageSize = Number(window.KNOWLEDGE_ARCHIVE_PAGE_SIZE || 9);
 
 let archivePage = 1;
+let activeMonth = "All";
+let activeDate = "";
 
 function activeTopic() {
   const active = document.querySelector(".topic-tab.is-active");
@@ -34,8 +41,84 @@ function filteredNotes() {
     const categories = note.categories || [];
     const matchesTopic = topic === "All" || categories.includes(topic);
     const matchesQuery = !query || String(note.search || "").includes(query);
-    return matchesTopic && matchesQuery;
+    const matchesMonth = activeMonth === "All" || note.monthKey === activeMonth;
+    const matchesDate = !activeDate || note.date === activeDate;
+    return matchesTopic && matchesQuery && matchesMonth && matchesDate;
   });
+}
+
+function monthLabel(monthKey) {
+  const [year, month] = monthKey.split("-").map(Number);
+  return new Date(year, month - 1, 1).toLocaleDateString("en", {
+    month: "long",
+    year: "numeric",
+  });
+}
+
+function monthKeys() {
+  return [...new Set(archiveNotes.map((note) => note.monthKey).filter(Boolean))];
+}
+
+function notesForMonth(monthKey) {
+  return archiveNotes.filter((note) => note.monthKey === monthKey);
+}
+
+function renderMonthControls() {
+  if (!monthList || archiveNotes.length === 0) return;
+  const buttons = [
+    `<button type="button" class="${activeMonth === "All" ? "is-active" : ""}" data-month="All">All months</button>`,
+    ...monthKeys().map(
+      (monthKey) =>
+        `<button type="button" class="${activeMonth === monthKey ? "is-active" : ""}" data-month="${escapeHtml(monthKey)}">${escapeHtml(monthLabel(monthKey))}</button>`
+    ),
+  ];
+  monthList.innerHTML = buttons.join("");
+}
+
+function renderCalendar() {
+  if (!calendarPanel || !calendarGrid || !calendarTitle) return;
+
+  if (activeMonth === "All") {
+    calendarPanel.hidden = true;
+    return;
+  }
+
+  calendarPanel.hidden = false;
+  calendarTitle.textContent = monthLabel(activeMonth);
+  if (clearDayButton) clearDayButton.hidden = !activeDate;
+
+  const monthNotes = notesForMonth(activeMonth);
+  const notesByDate = monthNotes.reduce((days, note) => {
+    if (!days[note.date]) days[note.date] = [];
+    days[note.date].push(note);
+    return days;
+  }, {});
+  const [year, month] = activeMonth.split("-").map(Number);
+  const firstDay = new Date(year, month - 1, 1).getDay();
+  const daysInMonth = new Date(year, month, 0).getDate();
+  const cells = [];
+
+  for (let i = 0; i < firstDay; i += 1) {
+    cells.push('<span class="calendar-day is-empty" aria-hidden="true"></span>');
+  }
+
+  for (let day = 1; day <= daysInMonth; day += 1) {
+    const date = `${activeMonth}-${String(day).padStart(2, "0")}`;
+    const dayNotes = notesByDate[date] || [];
+    const label = dayNotes.length === 1 ? dayNotes[0].title : `${dayNotes.length} notes`;
+    const active = activeDate === date ? " is-active" : "";
+    const hasNote = dayNotes.length > 0 ? " has-note" : "";
+    const disabled = dayNotes.length === 0 ? " disabled" : "";
+    const title = dayNotes.length > 0 ? ` title="${escapeHtml(label)}"` : "";
+    cells.push(
+      `<button type="button" class="calendar-day${active}${hasNote}" data-date="${escapeHtml(date)}"${disabled}${title}>
+        <span>${day}</span>
+        ${dayNotes.length > 0 ? `<small>${dayNotes.length}</small>` : ""}
+      </button>`
+    );
+  }
+
+  calendarGrid.innerHTML = cells.join("");
 }
 
 function categoryUrl(category) {
@@ -97,6 +180,8 @@ function renderArchive() {
   }
 
   renderPagination(notes.length);
+  renderMonthControls();
+  renderCalendar();
 }
 
 function selectTopic(topic) {
@@ -106,11 +191,26 @@ function selectTopic(topic) {
   renderArchive();
 }
 
+function selectMonth(month) {
+  activeMonth = month;
+  activeDate = "";
+  archivePage = 1;
+  renderArchive();
+}
+
+function selectDate(date) {
+  activeDate = date;
+  archivePage = 1;
+  renderArchive();
+}
+
 function applyUrlFilters() {
   const params = new URLSearchParams(window.location.search);
   const topic = params.get("topic");
   const query = params.get("q");
   const limit = Number(params.get("limit"));
+  const month = params.get("month");
+  const date = params.get("date");
 
   if (query && searchInput) {
     searchInput.value = query;
@@ -121,12 +221,45 @@ function applyUrlFilters() {
     pageSizeSelect.value = String(limit);
   }
 
+  if (month && monthKeys().includes(month)) {
+    activeMonth = month;
+  }
+
+  if (date && archiveNotes.some((note) => note.date === date)) {
+    activeDate = date;
+    activeMonth = date.slice(0, 7);
+  }
+
   if (topic && topicTabs.some((tab) => tab.dataset.topic === topic)) {
     selectTopic(topic);
     return;
   }
 
   renderArchive();
+}
+
+if (monthList) {
+  monthList.addEventListener("click", (event) => {
+    const button = event.target.closest("button[data-month]");
+    if (!button) return;
+    selectMonth(button.dataset.month);
+  });
+}
+
+if (calendarGrid) {
+  calendarGrid.addEventListener("click", (event) => {
+    const button = event.target.closest("button[data-date]");
+    if (!button || button.disabled) return;
+    selectDate(button.dataset.date);
+  });
+}
+
+if (clearDayButton) {
+  clearDayButton.addEventListener("click", () => {
+    activeDate = "";
+    archivePage = 1;
+    renderArchive();
+  });
 }
 
 if (searchForm) {
