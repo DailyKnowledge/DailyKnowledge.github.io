@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 933" role="img" aria-labelledby="title desc">
+  <title id="title">Feedback Loops Explained</title>
+  <desc id="desc">A diagram illustrating reinforcing loops using a snowball effect and balancing loops using a balance scale.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f8fbff"/>
+      <stop offset="1" stop-color="#f4f2ec"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="20" flood-color="#17212b" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+  <rect width="1400" height="933" fill="url(#bg)"/>
+  <rect x="160" y="126" width="1080" height="680" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+  
+  <text x="220" y="204" fill="#2e6678" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">FEEDBACK LOOPS</text>
+
+  <!-- Left: Reinforcing Loop (Snowball Metaphor) -->
+  <g transform="translate(250, 300)">
+    <rect width="400" height="300" rx="12" fill="#fff3ef" stroke="#dfb6ad" stroke-width="2"/>
+    <text x="200" y="40" text-anchor="middle" fill="#b94f43" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">REINFORCING</text>
+    <text x="200" y="70" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="16">"The Snowball Effect"</text>
+    
+    <!-- Hill -->
+    <path d="M 50 250 Q 200 250 350 150" fill="none" stroke="#d1d9de" stroke-width="4"/>
+    
+    <!-- Snowball getting bigger -->
+    <circle cx="100" cy="235" r="15" fill="#ffffff" stroke="#b94f43" stroke-width="2"/>
+    <circle cx="200" cy="210" r="25" fill="#ffffff" stroke="#b94f43" stroke-width="2"/>
+    <circle cx="310" cy="170" r="40" fill="#ffffff" stroke="#b94f43" stroke-width="2"/>
+    
+    <text x="200" y="280" text-anchor="middle" fill="#b94f43" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">Change Compounds</text>
+  </g>
+
+  <!-- Right: Balancing Loop (Scale Metaphor) -->
+  <g transform="translate(750, 300)">
+    <rect width="400" height="300" rx="12" fill="#eef7f8" stroke="#1f7a8c" stroke-width="2"/>
+    <text x="200" y="40" text-anchor="middle" fill="#1f7a8c" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">BALANCING</text>
+    <text x="200" y="70" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="16">"The Thermostat Effect"</text>
+    
+    <!-- Scale -->
+    <path d="M 200 250 L 200 150 M 100 180 L 300 180" stroke="#1f7a8c" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="200" cy="250" r="10" fill="#1f7a8c"/>
+    <rect x="80" y="180" width="40" height="40" fill="#1f7a8c" opacity="0.6"/>
+    <rect x="280" y="180" width="40" height="40" fill="#1f7a8c" opacity="0.6"/>
+    
+    <text x="200" y="280" text-anchor="middle" fill="#1f7a8c" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">System Corrects</text>
+  </g>
+
+  <text x="700" y="790" text-anchor="middle" fill="#5d6870" font-family="Inter, Arial, sans-serif" font-size="32">Reinforcing loops amplify; balancing loops stabilize.</text>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 933" role="img" aria-labelledby="title desc">
+  <title id="title">Manuscript Margins</title>
+  <desc id="desc">A diagram representing a manuscript page with annotations and sketches in the margins.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f8fbff"/>
+      <stop offset="1" stop-color="#f4f2ec"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="20" flood-color="#17212b" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+  <rect width="1400" height="933" fill="url(#bg)"/>
+  <rect x="160" y="126" width="1080" height="680" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+  
+  <text x="220" y="204" fill="#2e6678" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">MANUSCRIPT MARGINS</text>
+
+  <!-- Page Background -->
+  <rect x="350" y="280" width="700" height="500" rx="8" fill="#fbfaf6" stroke="#dfe4dc" stroke-width="2"/>
+
+  <!-- Main Text Area (Simulated) -->
+  <g transform="translate(450, 350)">
+    <rect width="500" height="20" fill="#d1d9de" rx="4"/>
+    <rect y="40" width="500" height="20" fill="#d1d9de" rx="4"/>
+    <rect y="80" width="500" height="20" fill="#d1d9de" rx="4"/>
+    <rect y="120" width="500" height="20" fill="#d1d9de" rx="4"/>
+    <rect y="160" width="500" height="20" fill="#d1d9de" rx="4"/>
+    <rect y="200" width="500" height="20" fill="#d1d9de" rx="4"/>
+    <rect y="240" width="500" height="20" fill="#d1d9de" rx="4"/>
+    <rect y="280" width="500" height="20" fill="#d1d9de" rx="4"/>
+  </g>
+
+  <!-- Marginalia -->
+  <!-- Side Notes -->
+  <text x="400" y="370" fill="#c95b4d" font-family="cursive, serif" font-size="14" transform="rotate(-5, 400, 370)">N.B.!</text>
+  <path d="M 430 365 L 450 365" stroke="#c95b4d" stroke-width="1" marker-end="url(#arrow-coral)"/>
+  
+  <text x="380" y="500" fill="#2e6678" font-family="cursive, serif" font-size="14" transform="rotate(10, 380, 500)">Correction...</text>
+  <rect x="375" y="520" width="60" height="40" rx="4" fill="none" stroke="#2e6678" stroke-width="1" stroke-dasharray="2,2"/>
+  
+  <!-- Sketch -->
+  <path d="M 970 450 Q 1000 420, 1030 450 Q 1000 480, 970 450 Z" fill="none" stroke="#c59838" stroke-width="2"/>
+  <circle cx="1000" cy="450" r="5" fill="#c59838"/>
+  <text x="1000" y="490" text-anchor="middle" fill="#c59838" font-family="cursive, serif" font-size="12">Sketch</text>
+
+  <!-- Bottom Annotation -->
+  <text x="700" y="730" text-anchor="middle" fill="#6b8f71" font-family="cursive, serif" font-size="16">"Dialogue between reader and text"</text>
+
+  <text x="700" y="790" text-anchor="middle" fill="#5d6870" font-family="Inter, Arial, sans-serif" font-size="32">A margin can be evidence of attention.</text>
+</svg>

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 933" role="img" aria-labelledby="title desc">
+  <title id="title">Evolutionary Selection</title>
+  <desc id="desc">A diagram showing variation being filtered by natural selection, leading to differential survival.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f8fbff"/>
+      <stop offset="1" stop-color="#f4f2ec"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="20" flood-color="#17212b" flood-opacity="0.14"/>
+    </filter>
+    <marker id="arrow-gray" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#d1d9de"/>
+    </marker>
+  </defs>
+  <rect width="1400" height="933" fill="url(#bg)"/>
+  <rect x="160" y="126" width="1080" height="680" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+  
+  <text x="220" y="204" fill="#2e6678" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">EVOLUTIONARY SELECTION</text>
+
+  <!-- Step 1: Variation -->
+  <g transform="translate(250, 300)">
+    <text x="150" y="-30" text-anchor="middle" fill="#5c6b66" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700">1. VARIATION</text>
+    <rect width="300" height="120" rx="12" fill="#f1f4ed" stroke="#dfe4dc" stroke-width="2"/>
+    <circle cx="50" cy="60" r="20" fill="#c95b4d"/> <!-- Survivors -->
+    <rect x="110" y="40" width="40" height="40" fill="#1f7a8c"/>
+    <path d="M 200 40 L 240 80 M 240 40 L 200 80" stroke="#c59838" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="50" cy="60" r="20" fill="none" stroke="#c95b4d" stroke-width="2"/>
+    <text x="150" y="150" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="16">Different traits exist</text>
+  </g>
+
+  <!-- Step 2: Selection Filter -->
+  <g transform="translate(600, 300)">
+    <text x="100" y="-30" text-anchor="middle" fill="#5c6b66" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700">2. SELECTION</text>
+    <rect width="200" height="120" rx="12" fill="#16211f" opacity="0.8"/>
+    <circle cx="100" cy="60" r="25" fill="none" stroke="#ffffff" stroke-width="4" stroke-dasharray="5,5"/>
+    <text x="100" y="150" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="16">Environmental Filter</text>
+  </g>
+
+  <!-- Step 3: Inheritance -->
+  <g transform="translate(850, 300)">
+    <text x="150" y="-30" text-anchor="middle" fill="#5c6b66" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700">3. INHERITANCE</text>
+    <rect width="300" height="120" rx="12" fill="#f1f4ed" stroke="#dfe4dc" stroke-width="2"/>
+    <circle cx="60" cy="60" r="20" fill="#c95b4d"/>
+    <circle cx="130" cy="60" r="20" fill="#c95b4d"/>
+    <circle cx="200" cy="60" r="20" fill="#c95b4d"/>
+    <circle cx="270" cy="60" r="20" fill="#c95b4d"/>
+    <text x="150" y="150" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="16">Successful traits persist</text>
+  </g>
+
+  <!-- Connection arrows -->
+  <path d="M 550 360 L 590 360" stroke="#d1d9de" stroke-width="4" marker-end="url(#arrow-gray)"/>
+  <path d="M 800 360 L 840 360" stroke="#d1d9de" stroke-width="4" marker-end="url(#arrow-gray)"/>
+
+  <text x="700" y="790" text-anchor="middle" fill="#5d6870" font-family="Inter, Arial, sans-serif" font-size="32">Selection is a filter acting on existing variation.</text>
+</svg>

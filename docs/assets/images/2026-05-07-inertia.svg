@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 933" role="img" aria-labelledby="title desc">
+  <title id="title">Inertia and Motion</title>
+  <desc id="desc">A diagram illustrating inertia: objects maintain their state of motion unless acted upon by an external force.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f8fbff"/>
+      <stop offset="1" stop-color="#f4f2ec"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="20" flood-color="#17212b" flood-opacity="0.14"/>
+    </filter>
+    <marker id="arrow-teal" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#1f7a8c"/>
+    </marker>
+  </defs>
+  <rect width="1400" height="933" fill="url(#bg)"/>
+  <rect x="160" y="126" width="1080" height="680" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+  
+  <text x="220" y="204" fill="#2e6678" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">INERTIA</text>
+
+  <!-- Object at Rest -->
+  <g transform="translate(300, 350)">
+    <rect width="300" height="150" rx="12" fill="#f1f4ed" stroke="#dfe4dc" stroke-width="2"/>
+    <rect x="110" y="45" width="80" height="60" fill="#16211f"/>
+    <text x="150" y="-20" text-anchor="middle" fill="#5c6b66" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700">AT REST</text>
+    <text x="150" y="180" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="16">Stay at rest</text>
+  </g>
+
+  <text x="700" y="425" text-anchor="middle" fill="#d1d9de" font-family="Inter, Arial, sans-serif" font-size="40">OR</text>
+
+  <!-- Object in Motion -->
+  <g transform="translate(800, 350)">
+    <rect width="300" height="150" rx="12" fill="#f1f4ed" stroke="#dfe4dc" stroke-width="2"/>
+    <rect x="110" y="45" width="80" height="60" fill="#1f7a8c"/>
+    <path d="M 200 75 L 260 75" stroke="#1f7a8c" stroke-width="4" marker-end="url(#arrow-teal)"/>
+    <path d="M 80 75 L 40 75 M 70 60 L 30 60 M 70 90 L 30 90" stroke="#1f7a8c" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+    <text x="150" y="-20" text-anchor="middle" fill="#1f7a8c" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700">IN MOTION</text>
+    <text x="150" y="180" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="16">Stay in motion</text>
+  </g>
+
+  <!-- The Rule -->
+  <rect x="400" y="600" width="600" height="80" rx="12" fill="#fbfaf6" stroke="#dfe4dc" stroke-width="2"/>
+  <text x="700" y="645" text-anchor="middle" fill="#16211f" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">UNLESS ACTED ON BY A NET FORCE</text>
+
+  <text x="700" y="790" text-anchor="middle" fill="#5d6870" font-family="Inter, Arial, sans-serif" font-size="32">Forces explain changes in motion, not motion itself.</text>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 933" role="img" aria-labelledby="title desc">
+  <title id="title">Opportunity Cost</title>
+  <desc id="desc">A diagram illustrating opportunity cost: choosing one path and the value of the path not taken.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f8fbff"/>
+      <stop offset="1" stop-color="#f4f2ec"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="20" flood-color="#17212b" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+  <rect width="1400" height="933" fill="url(#bg)"/>
+  <rect x="160" y="126" width="1080" height="680" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+  
+  <text x="220" y="204" fill="#2e6678" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">OPPORTUNITY COST</text>
+
+  <!-- Choice Point -->
+  <circle cx="400" cy="466" r="15" fill="#16211f"/>
+  <text x="350" y="475" text-anchor="end" fill="#16211f" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">DECISION</text>
+
+  <!-- Path A: Chosen -->
+  <path d="M 400 466 L 900 300" stroke="#1f7a8c" stroke-width="12" stroke-linecap="round"/>
+  <rect x="920" y="250" width="220" height="100" rx="12" fill="#1f7a8c"/>
+  <text x="1030" y="310" text-anchor="middle" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">OPTION A</text>
+  <text x="1030" y="380" text-anchor="middle" fill="#1f7a8c" font-family="Inter, Arial, sans-serif" font-size="18">The Choice Made</text>
+
+  <!-- Path B: Foregone -->
+  <path d="M 400 466 L 900 633" stroke="#d1d9de" stroke-width="12" stroke-linecap="round" stroke-dasharray="20,10"/>
+  <rect x="920" y="583" width="220" height="100" rx="12" fill="#f1f4ed" stroke="#dfe4dc" stroke-width="2"/>
+  <text x="1030" y="643" text-anchor="middle" fill="#9aa5a1" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">OPTION B</text>
+  <text x="1030" y="713" text-anchor="middle" fill="#c95b4d" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700">THE COST</text>
+  <text x="1030" y="740" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="16">Value Foregone</text>
+
+  <text x="700" y="790" text-anchor="middle" fill="#5d6870" font-family="Inter, Arial, sans-serif" font-size="32">Choosing one thing means not choosing another.</text>
+</svg>
