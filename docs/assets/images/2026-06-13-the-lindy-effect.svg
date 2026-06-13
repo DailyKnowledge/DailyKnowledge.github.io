@@ -1,0 +1,31 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#fcfcfc" rx="8"/>
+  
+  <!-- Axes -->
+  <line x1="100" y1="350" x2="700" y2="350" stroke="#444" stroke-width="2" /> <!-- X-Axis -->
+  <line x1="100" y1="350" x2="100" y2="50" stroke="#444" stroke-width="2" />  <!-- Y-Axis -->
+
+  <!-- Lindy Curve (Linear growth of expectancy) -->
+  <line x1="100" y1="350" x2="650" y2="100" stroke="#27ae60" stroke-width="4" stroke-linecap="round" />
+  
+  <!-- Biological Decay Curve (Comparison) -->
+  <path d="M 100 150 Q 300 160 500 350" fill="none" stroke="#bdc3c7" stroke-width="2" stroke-dasharray="5,5" />
+
+  <!-- Points of Interest -->
+  <circle cx="200" cy="305" r="5" fill="#27ae60" />
+  <text x="210" y="325" font-family="sans-serif" font-size="12" fill="#666">New Idea</text>
+  
+  <circle cx="550" cy="145" r="5" fill="#27ae60" />
+  <text x="500" y="125" font-family="sans-serif" font-size="14" font-weight="bold" fill="#27ae60">The Classics (Lindy)</text>
+
+  <!-- Labels -->
+  <text x="400" y="385" font-family="sans-serif" font-size="16" text-anchor="middle" fill="#444">Current Age (Time Survived)</text>
+  <text x="40" y="200" font-family="sans-serif" font-size="16" text-anchor="middle" transform="rotate(-90 40,200)" fill="#444">Future Life Expectancy</text>
+
+  <!-- Annotation -->
+  <g transform="translate(450, 250)">
+    <text x="0" y="0" font-family="sans-serif" font-size="12" fill="#7f8c8d" font-style="italic">"Time is a judge, not a killer"</text>
+    <path d="M -20 -10 Q -50 -30 -80 -10" fill="none" stroke="#bdc3c7" stroke-width="1" marker-end="url(#arrow)"/>
+  </g>
+</svg>
