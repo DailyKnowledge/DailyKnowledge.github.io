@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 933" role="img" aria-labelledby="title desc">
+  <title id="title">Dunbar's Number</title>
+  <desc id="desc">A concentric circle diagram showing the layers of human relationships from the support group (5 people) up to Dunbar's limit of 150 stable relationships, and acquaintances beyond.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f8fbff"/>
+      <stop offset="1" stop-color="#f4f2ec"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="20" flood-color="#17212b" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+  <rect width="1400" height="933" fill="url(#bg)"/>
+  <rect x="160" y="126" width="1080" height="680" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+  
+  <text x="220" y="204" fill="#2e6678" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">DUNBAR'S NUMBER</text>
+
+  <!-- Concentric Rings centered at (650, 480) -->
+  <g transform="translate(60, 0)">
+    <!-- Circles -->
+    <!-- Acquaintances (500) -->
+    <circle cx="590" cy="460" r="280" fill="none" stroke="#e6ecef" stroke-width="2"/>
+    <!-- Dunbar's Limit (150) -->
+    <circle cx="590" cy="460" r="210" fill="none" stroke="#c95b4d" stroke-dasharray="6,4" stroke-width="3"/>
+    <!-- Casual Friends (50) -->
+    <circle cx="590" cy="460" r="140" fill="none" stroke="#e0e6ed" stroke-width="2"/>
+    <!-- Close Friends (15) -->
+    <circle cx="590" cy="460" r="80" fill="none" stroke="#d2dce8" stroke-width="2"/>
+    <!-- Support Group (5) -->
+    <circle cx="590" cy="460" r="35" fill="#e1f5fe" stroke="#1f7a8c" stroke-width="2"/>
+
+    <!-- Scattered Nodes (Visual representation of people) -->
+    <!-- Inner 5 dots -->
+    <circle cx="590" cy="460" r="6" fill="#1f7a8c"/>
+    <circle cx="605" cy="445" r="6" fill="#1f7a8c"/>
+    <circle cx="575" cy="450" r="6" fill="#1f7a8c"/>
+    <circle cx="580" cy="475" r="6" fill="#1f7a8c"/>
+    <circle cx="600" cy="470" r="6" fill="#1f7a8c"/>
+
+    <!-- Layer 2 (15) dots (r=50 to 75) -->
+    <circle cx="630" cy="425" r="5" fill="#68747c" opacity="0.8"/>
+    <circle cx="550" cy="425" r="5" fill="#68747c" opacity="0.8"/>
+    <circle cx="550" cy="495" r="5" fill="#68747c" opacity="0.8"/>
+    <circle cx="630" cy="495" r="5" fill="#68747c" opacity="0.8"/>
+    <circle cx="590" cy="410" r="5" fill="#68747c" opacity="0.8"/>
+    <circle cx="590" cy="510" r="5" fill="#68747c" opacity="0.8"/>
+
+    <!-- Layer 3 (50) dots (r=95 to 135) -->
+    <circle cx="670" cy="380" r="4.5" fill="#68747c" opacity="0.6"/>
+    <circle cx="510" cy="380" r="4.5" fill="#68747c" opacity="0.6"/>
+    <circle cx="510" cy="540" r="4.5" fill="#68747c" opacity="0.6"/>
+    <circle cx="670" cy="540" r="4.5" fill="#68747c" opacity="0.6"/>
+    <circle cx="590" cy="340" r="4.5" fill="#68747c" opacity="0.6"/>
+    <circle cx="590" cy="580" r="4.5" fill="#68747c" opacity="0.6"/>
+    <circle cx="710" cy="460" r="4.5" fill="#68747c" opacity="0.6"/>
+    <circle cx="470" cy="460" r="4.5" fill="#68747c" opacity="0.6"/>
+
+    <!-- Layer 4 (150) dots (r=155 to 200) -->
+    <circle cx="750" cy="360" r="4" fill="#68747c" opacity="0.4"/>
+    <circle cx="430" cy="360" r="4" fill="#68747c" opacity="0.4"/>
+    <circle cx="430" cy="560" r="4" fill="#68747c" opacity="0.4"/>
+    <circle cx="750" cy="560" r="4" fill="#68747c" opacity="0.4"/>
+    <circle cx="780" cy="460" r="4" fill="#68747c" opacity="0.4"/>
+    <circle cx="400" cy="460" r="4" fill="#68747c" opacity="0.4"/>
+    <circle cx="590" cy="270" r="4" fill="#68747c" opacity="0.4"/>
+    <circle cx="590" cy="650" r="4" fill="#68747c" opacity="0.4"/>
+
+    <!-- Ring Labels pointing outwards -->
+    <!-- Center Line -->
+    <line x1="590" y1="460" x2="890" y2="220" stroke="#b0bec5" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+    <!-- Label Support -->
+    <g transform="translate(630, 420)">
+      <line x1="0" y1="0" x2="320" y2="-120" stroke="#1f7a8c" stroke-width="1.5"/>
+      <rect x="320" y="-140" width="180" height="32" rx="4" fill="#1f7a8c"/>
+      <text x="330" y="-120" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700">5: Support Group</text>
+    </g>
+
+    <!-- Label Close Friends -->
+    <g transform="translate(650, 410)">
+      <line x1="0" y1="0" x2="300" y2="-70" stroke="#68747c" stroke-width="1.5"/>
+      <rect x="300" y="-90" width="180" height="32" rx="4" fill="#eff2f5" stroke="#cfd8dc" stroke-width="1"/>
+      <text x="310" y="-70" fill="#2c3e50" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700">15: Sympathy Group</text>
+    </g>
+
+    <!-- Label Casual Friends -->
+    <g transform="translate(690, 380)">
+      <line x1="0" y1="0" x2="260" y2="0" stroke="#68747c" stroke-width="1.5"/>
+      <rect x="260" y="-20" width="180" height="32" rx="4" fill="#eff2f5" stroke="#cfd8dc" stroke-width="1"/>
+      <text x="270" y="0" fill="#2c3e50" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700">50: Close Friends</text>
+    </g>
+
+    <!-- Label Dunbar's Limit -->
+    <g transform="translate(740, 350)">
+      <line x1="0" y1="0" x2="210" y2="70" stroke="#c95b4d" stroke-width="2"/>
+      <rect x="210" y="50" width="200" height="36" rx="4" fill="#c95b4d"/>
+      <text x="220" y="73" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700">150: Dunbar's Limit</text>
+    </g>
+
+    <!-- Label Acquaintances -->
+    <g transform="translate(790, 310)">
+      <line x1="0" y1="0" x2="160" y2="150" stroke="#68747c" stroke-width="1.5"/>
+      <rect x="160" y="130" width="200" height="32" rx="4" fill="#eff2f5" stroke="#cfd8dc" stroke-width="1"/>
+      <text x="170" y="150" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700">500: Acquaintances</text>
+    </g>
+  </g>
+
+  <!-- Bottom Message -->
+  <text x="700" y="790" text-anchor="middle" fill="#5d6870" font-family="Inter, Arial, sans-serif" font-size="32">The cognitive limit to stable social relationships is roughly 150.</text>
+</svg>
