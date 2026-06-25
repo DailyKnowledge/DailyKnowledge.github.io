@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 933" role="img" aria-labelledby="title desc">
+  <title id="title">Conway's Law</title>
+  <desc id="desc">A diagram demonstrating Conway's Law: a three-team organization structure is mirrored exactly by the three-module system architecture they build.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f8fbff"/>
+      <stop offset="1" stop-color="#f4f2ec"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="20" flood-color="#17212b" flood-opacity="0.14"/>
+    </filter>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#1f7a8c" />
+    </marker>
+    <marker id="arrow-orange" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#c59838" />
+    </marker>
+  </defs>
+  <rect width="1400" height="933" fill="url(#bg)"/>
+  <rect x="160" y="126" width="1080" height="680" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+  
+  <text x="220" y="204" fill="#2e6678" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">CONWAY'S LAW</text>
+
+  <!-- Left Side: Organization Chart -->
+  <g>
+    <text x="420" y="280" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">1. Organizational Structure</text>
+    
+    <!-- Team Communication Lines -->
+    <line x1="360" y1="360" x2="480" y2="440" stroke="#b0bec5" stroke-width="4" stroke-dasharray="6,4"/>
+    <line x1="480" y1="440" x2="360" y2="520" stroke="#b0bec5" stroke-width="4" stroke-dasharray="6,4"/>
+    
+    <!-- Team A (Blue) -->
+    <g transform="translate(360, 360)">
+      <circle cx="0" cy="0" r="45" fill="#e1f5fe" stroke="#1f7a8c" stroke-width="3"/>
+      <!-- People inside -->
+      <circle cx="-15" cy="-5" r="8" fill="#1f7a8c"/>
+      <circle cx="15" cy="-5" r="8" fill="#1f7a8c"/>
+      <circle cx="0" cy="15" r="8" fill="#1f7a8c"/>
+      <text x="0" y="-55" text-anchor="middle" fill="#1f7a8c" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700">Team A</text>
+    </g>
+
+    <!-- Team B (Orange) -->
+    <g transform="translate(480, 440)">
+      <circle cx="0" cy="0" r="45" fill="#fff3e0" stroke="#c59838" stroke-width="3"/>
+      <!-- People inside -->
+      <circle cx="-15" cy="-5" r="8" fill="#c59838"/>
+      <circle cx="15" cy="-5" r="8" fill="#c59838"/>
+      <circle cx="0" cy="15" r="8" fill="#c59838"/>
+      <text x="0" y="-55" text-anchor="middle" fill="#c59838" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700">Team B</text>
+    </g>
+
+    <!-- Team C (Green/Gray) -->
+    <g transform="translate(360, 520)">
+      <circle cx="0" cy="0" r="45" fill="#e8f5e9" stroke="#388e3c" stroke-width="3"/>
+      <!-- People inside -->
+      <circle cx="-15" cy="-5" r="8" fill="#388e3c"/>
+      <circle cx="15" cy="-5" r="8" fill="#388e3c"/>
+      <circle cx="0" cy="15" r="8" fill="#388e3c"/>
+      <text x="0" y="60" text-anchor="middle" fill="#388e3c" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700">Team C</text>
+    </g>
+
+    <text x="420" y="640" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="14">Teams communicate only along defined lines</text>
+  </g>
+
+  <!-- Mirror/Mapping Arrow in Center -->
+  <g>
+    <!-- Arrow pointing right -->
+    <path d="M 640 440 L 760 440" fill="none" stroke="#2e6678" stroke-width="4" marker-end="url(#arrow-blue)"/>
+    <text x="700" y="410" text-anchor="middle" fill="#2e6678" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="900">SHAPES &amp;</text>
+    <text x="700" y="475" text-anchor="middle" fill="#2e6678" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="900">INFLUENCES</text>
+  </g>
+
+  <!-- Right Side: System Architecture -->
+  <g>
+    <text x="980" y="280" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">2. System Architecture</text>
+    
+    <!-- Component Interfaces (arrows) -->
+    <path d="M 920 350 L 920 400" fill="none" stroke="#1f7a8c" stroke-width="3" marker-end="url(#arrow-blue)"/>
+    <path d="M 920 470 L 920 520" fill="none" stroke="#388e3c" stroke-width="3" marker-end="url(#arrow-orange)"/>
+    
+    <!-- Module A (Blue) -->
+    <g transform="translate(920, 320)">
+      <rect x="-80" y="-30" width="160" height="60" rx="8" fill="#e1f5fe" stroke="#1f7a8c" stroke-width="3"/>
+      <text x="10" y="5" text-anchor="middle" fill="#1f7a8c" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700">Module A</text>
+      <!-- DB icon inside -->
+      <rect x="-60" y="-15" width="20" height="30" rx="3" fill="#1f7a8c"/>
+    </g>
+
+    <!-- Module B (Orange) -->
+    <g transform="translate(920, 440)">
+      <rect x="-80" y="-30" width="160" height="60" rx="8" fill="#fff3e0" stroke="#c59838" stroke-width="3"/>
+      <text x="10" y="5" text-anchor="middle" fill="#c59838" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700">Module B</text>
+      <!-- UI icon inside -->
+      <rect x="-60" y="-15" width="20" height="30" rx="3" fill="#c59838"/>
+    </g>
+
+    <!-- Module C (Green) -->
+    <g transform="translate(920, 560)">
+      <rect x="-80" y="-30" width="160" height="60" rx="8" fill="#e8f5e9" stroke="#388e3c" stroke-width="3"/>
+      <text x="10" y="5" text-anchor="middle" fill="#388e3c" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700">Module C</text>
+      <!-- API icon inside -->
+      <rect x="-60" y="-15" width="20" height="30" rx="3" fill="#388e3c"/>
+    </g>
+
+    <text x="980" y="640" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="14">Software modules duplicate the team interfaces</text>
+  </g>
+
+  <!-- Bottom Message -->
+  <text x="700" y="790" text-anchor="middle" fill="#5d6870" font-family="Inter, Arial, sans-serif" font-size="32">"Organizations design systems that copy their communication structures."</text>
+</svg>

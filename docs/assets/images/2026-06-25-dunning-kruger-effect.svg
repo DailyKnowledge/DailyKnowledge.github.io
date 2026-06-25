@@ -35,9 +35,9 @@
   <!-- Mount Stupid -->
   <g>
     <circle cx="450" cy="240" r="10" fill="#c95b4d" stroke="#ffffff" stroke-width="3"/>
-    <rect x="350" y="140" width="200" height="60" rx="6" fill="#fbebe8" stroke="#c95b4d" stroke-width="2"/>
-    <text x="450" y="165" text-anchor="middle" fill="#c95b4d" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="900">MOUNT STUPID</text>
-    <text x="450" y="185" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="12">"I know everything!"</text>
+    <rect x="510" y="220" width="200" height="60" rx="6" fill="#fbebe8" stroke="#c95b4d" stroke-width="2"/>
+    <text x="610" y="245" text-anchor="middle" fill="#c95b4d" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="900">MOUNT STUPID</text>
+    <text x="610" y="265" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="12">"I know everything!"</text>
   </g>
 
   <!-- Valley of Despair -->
@@ -50,8 +50,8 @@
 
   <!-- Slope of Enlightenment -->
   <g transform="translate(850, 480)">
-    <text x="0" y="0" transform="rotate(-15)" text-anchor="middle" fill="#2e6678" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="900">SLOPE OF ENLIGHTENMENT</text>
-    <text x="0" y="20" transform="rotate(-15)" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="12">"This is starting to make sense."</text>
+    <text x="0" y="8" transform="rotate(-35)" text-anchor="middle" fill="#2e6678" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="900">SLOPE OF ENLIGHTENMENT</text>
+    <text x="0" y="34" transform="rotate(-35)" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="12">"This is starting to make sense."</text>
   </g>
 
   <!-- Plateau of Sustainability -->
