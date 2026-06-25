@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 933" role="img" aria-labelledby="title desc">
+  <title id="title">Dunning-Kruger Effect</title>
+  <desc id="desc">A graph illustrating the Dunning-Kruger Effect: confidence is plotted against competence. It shows the peak of Mount Stupid, the Valley of Despair, the Slope of Enlightenment, and the Plateau of Sustainability.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f8fbff"/>
+      <stop offset="1" stop-color="#f4f2ec"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="20" flood-color="#17212b" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+  <rect width="1400" height="933" fill="url(#bg)"/>
+  <rect x="160" y="126" width="1080" height="680" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+  
+  <text x="220" y="204" fill="#2e6678" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">DUNNING-KRUGER EFFECT</text>
+
+  <!-- Axes and Grid -->
+  <g>
+    <!-- Grid line -->
+    <line x1="300" y1="240" x2="1080" y2="240" stroke="#f0f0f0" stroke-width="1.5" stroke-dasharray="4,4"/>
+    <line x1="300" y1="570" x2="1080" y2="570" stroke="#f0f0f0" stroke-width="1.5" stroke-dasharray="4,4"/>
+    
+    <!-- Y-axis -->
+    <path d="M 300 200 L 300 650 L 1120 650" fill="none" stroke="#68747c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <text x="710" y="700" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700">COMPETENCE (Knowledge &amp; Experience)</text>
+    <text x="-425" y="240" transform="rotate(-90)" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700">CONFIDENCE</text>
+  </g>
+
+  <!-- Dunning-Kruger Curve -->
+  <path d="M 300,650 C 350,300 400,240 450,240 C 500,240 580,550 680,570 C 780,590 920,430 1080,350" fill="none" stroke="#1f7a8c" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Key Points & Callouts -->
+  <!-- Mount Stupid -->
+  <g>
+    <circle cx="450" cy="240" r="10" fill="#c95b4d" stroke="#ffffff" stroke-width="3"/>
+    <rect x="350" y="140" width="200" height="60" rx="6" fill="#fbebe8" stroke="#c95b4d" stroke-width="2"/>
+    <text x="450" y="165" text-anchor="middle" fill="#c95b4d" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="900">MOUNT STUPID</text>
+    <text x="450" y="185" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="12">"I know everything!"</text>
+  </g>
+
+  <!-- Valley of Despair -->
+  <g>
+    <circle cx="680" cy="570" r="10" fill="#68747c" stroke="#ffffff" stroke-width="3"/>
+    <rect x="580" y="605" width="200" height="60" rx="6" fill="#f0f2f5" stroke="#68747c" stroke-width="2"/>
+    <text x="680" y="630" text-anchor="middle" fill="#2c3e50" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="900">VALLEY OF DESPAIR</text>
+    <text x="680" y="650" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="12">"I'll never understand this..."</text>
+  </g>
+
+  <!-- Slope of Enlightenment -->
+  <g transform="translate(850, 480)">
+    <text x="0" y="0" transform="rotate(-15)" text-anchor="middle" fill="#2e6678" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="900">SLOPE OF ENLIGHTENMENT</text>
+    <text x="0" y="20" transform="rotate(-15)" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="12">"This is starting to make sense."</text>
+  </g>
+
+  <!-- Plateau of Sustainability -->
+  <g>
+    <circle cx="1080" cy="350" r="10" fill="#388e3c" stroke="#ffffff" stroke-width="3"/>
+    <rect x="960" y="250" width="240" height="60" rx="6" fill="#e8f5e9" stroke="#388e3c" stroke-width="2"/>
+    <text x="1080" y="275" text-anchor="middle" fill="#388e3c" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="900">PLATEAU OF SUSTAINABILITY</text>
+    <text x="1080" y="295" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="12">"It's complex, but I understand it."</text>
+  </g>
+
+  <!-- Bottom Message -->
+  <text x="700" y="790" text-anchor="middle" fill="#5d6870" font-family="Inter, Arial, sans-serif" font-size="32">True knowledge is knowing the extent of one's ignorance.</text>
+</svg>
