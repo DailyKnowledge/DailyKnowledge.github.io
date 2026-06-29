@@ -35,7 +35,7 @@
 
   <path d="M470 474 C 548 442, 620 446, 674 486" fill="none" stroke="#1f7a8c" stroke-width="10" stroke-linecap="round"/>
   <path d="M674 486 L626 492 L650 450 Z" fill="#1f7a8c"/>
-  <text x="438" y="454" fill="#1f7a8c" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="700">water + minerals</text>
+  <text x="438" y="444" fill="#1f7a8c" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="700">water + minerals</text>
 
   <path d="M922 474 C 846 440, 774 446, 724 486" fill="none" stroke="#c75c4a" stroke-width="10" stroke-linecap="round"/>
   <path d="M724 486 L772 492 L748 450 Z" fill="#c75c4a"/>

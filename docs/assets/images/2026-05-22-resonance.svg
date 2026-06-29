@@ -20,7 +20,7 @@
   <text x="206" y="312" fill="#5c6b66" font-family="Inter, Arial, sans-serif" font-size="28" transform="rotate(-90 206 312)">motion</text>
 
   <path d="M300 548 C 342 514, 382 514, 424 548 C 466 582, 506 582, 548 548 C 590 514, 630 514, 672 548 C 714 582, 754 582, 796 548 C 838 514, 878 514, 920 548" fill="none" stroke="#c59838" stroke-width="10" stroke-linecap="round"/>
-  <text x="410" y="494" fill="#9a6b16" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="700">small timed pushes</text>
+  <text x="410" y="464" fill="#9a6b16" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="700">small timed pushes</text>
 
   <path d="M420 618 C 478 548, 536 548, 594 618 C 652 688, 710 688, 768 618 C 826 548, 884 548, 942 618 C 1000 688, 1058 688, 1116 618" fill="none" stroke="#1f7a8c" stroke-width="18" stroke-linecap="round"/>
   <path d="M420 618 C 478 548, 536 548, 594 618 C 652 688, 710 688, 768 618 C 826 548, 884 548, 942 618 C 1000 688, 1058 688, 1116 618" fill="none" stroke="#8ec8b6" stroke-width="6" stroke-linecap="round"/>
@@ -36,5 +36,5 @@
   <path d="M855 488 V532" stroke="#c75c4a" stroke-width="10" stroke-linecap="round"/>
   <path d="M855 532 L831 506 M855 532 L879 506" stroke="#c75c4a" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
 
-  <text x="260" y="746" fill="#5c6b66" font-family="Inter, Arial, sans-serif" font-size="32">matching the rhythm can amplify the effect</text>
+  <text x="260" y="772" fill="#5c6b66" font-family="Inter, Arial, sans-serif" font-size="32">matching the rhythm can amplify the effect</text>
 </svg>

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 933" role="img" aria-labelledby="title desc">
+  <title id="title">Nash Equilibrium</title>
+  <desc id="desc">A diagram of the Prisoner's Dilemma payoff matrix, highlighting the Confess/Confess cell as the Nash Equilibrium where neither player has an incentive to unilaterally change their strategy.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f8fbff"/>
+      <stop offset="1" stop-color="#f4f2ec"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="20" flood-color="#17212b" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+  <rect width="1400" height="933" fill="url(#bg)"/>
+  <rect x="160" y="126" width="1080" height="680" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+  
+  <text x="220" y="204" fill="#2e6678" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">NASH EQUILIBRIUM</text>
+
+  <!-- Game Matrix Centered -->
+  <g>
+    <!-- Column Header: Player B -->
+    <text x="650" y="235" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="1">PLAYER B</text>
+    <text x="550" y="280" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700">SILENT</text>
+    <text x="750" y="280" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700">CONFESS</text>
+
+    <!-- Row Header: Player A (Rotated) -->
+    <text x="-450" y="280" transform="rotate(-90)" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="1">PLAYER A</text>
+    <text x="350" y="385" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700">SILENT</text>
+    <text x="350" y="515" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700">CONFESS</text>
+
+    <!-- The 2x2 Grid Lines -->
+    <rect x="450" y="320" width="400" height="260" rx="8" fill="none" stroke="#cfd8dc" stroke-width="3"/>
+    <line x1="650" y1="320" x2="650" y2="580" stroke="#cfd8dc" stroke-width="3"/>
+    <line x1="450" y1="450" x2="850" y2="450" stroke="#cfd8dc" stroke-width="3"/>
+
+    <!-- Cell 0,0: Silent / Silent -->
+    <g>
+      <text x="550" y="375" text-anchor="middle" fill="#1f7a8c" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">A: 1 Year</text>
+      <text x="550" y="405" text-anchor="middle" fill="#1f7a8c" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">B: 1 Year</text>
+      <text x="550" y="430" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="12">(Unstable cooperate)</text>
+    </g>
+
+    <!-- Cell 0,1: Silent / Confess -->
+    <g>
+      <text x="750" y="375" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">A: 10 Years</text>
+      <text x="750" y="405" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">B: 0 Years</text>
+    </g>
+
+    <!-- Cell 1,0: Confess / Silent -->
+    <g>
+      <text x="550" y="505" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">A: 0 Years</text>
+      <text x="550" y="535" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">B: 10 Years</text>
+    </g>
+
+    <!-- Cell 1,1: Confess / Confess (NASH EQUILIBRIUM) -->
+    <!-- Background highlight rect -->
+    <rect x="653" y="453" width="194" height="124" rx="6" fill="#fbebe8" stroke="#c95b4d" stroke-width="3"/>
+    <g>
+      <text x="750" y="500" text-anchor="middle" fill="#c95b4d" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="900">A: 5 Years</text>
+      <text x="750" y="525" text-anchor="middle" fill="#c95b4d" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="900">B: 5 Years</text>
+      
+      <!-- Label inside cell -->
+      <rect x="675" y="540" width="150" height="24" rx="4" fill="#c95b4d"/>
+      <text x="750" y="557" text-anchor="middle" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="900">NASH EQUILIBRIUM</text>
+    </g>
+  </g>
+
+  <!-- Side Arrow Pointers indicating the flow of choices -->
+  <g>
+    <!-- Arrow from Silent/Silent down to Confess/Silent (Player A's incentive to defect) -->
+    <path d="M 480 410 L 480 470" fill="none" stroke="#c59838" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 480 470 L 476 464 M 480 470 L 484 464" fill="none" stroke="#c59838" stroke-width="2"/>
+    
+    <!-- Arrow from Silent/Silent right to Silent/Confess (Player B's incentive to defect) -->
+    <path d="M 590 350 L 680 350" fill="none" stroke="#c59838" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 680 350 L 674 346 M 680 350 L 674 354" fill="none" stroke="#c59838" stroke-width="2"/>
+  </g>
+
+  <!-- Bottom Message -->
+  <text x="700" y="790" text-anchor="middle" fill="#5d6870" font-family="Inter, Arial, sans-serif" font-size="32">Neither player can improve their outcome by changing strategy alone.</text>
+</svg>

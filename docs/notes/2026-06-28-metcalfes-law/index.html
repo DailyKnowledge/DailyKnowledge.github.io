@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Metcalfe&#x27;s Law: The power of network effects · Daily Knowledge</title>
     <link rel="stylesheet" href="../../styles.css">
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']],
+          processEscapes: true
+        }
+      };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   </head>
   <body>
     <header class="site-header">
@@ -38,9 +48,9 @@
           <h2>What I learned</h2>
 <p>Metcalfe&#x27;s Law, conceptualized by Robert Metcalfe (co-inventor of Ethernet) in 1980, states that the systemic value of a communications network grows quadratically as a function of its users ($N^2$), while the cost of adding nodes grows linearly ($N$).</p>
 <p>Mathematically, the number of unique connections in a fully connected network of $N$ nodes is given by the formula: $$C = \frac{N(N - 1)}{2}$$</p>
-<p>If a network has 2 users, it has 1 connection. If it has 5 users, it has 10 connections. If it has 12 users, it has 66 connections. Every new user added to the network doesn&#x27;t just add a single unit of value—they add potential connections with *every single existing user* already in the network. This exponential connection increase is the driving engine behind <strong>network effects</strong>.</p>
+<p>If a network has 2 users, it has 1 connection. If it has 5 users, it has 10 connections. If it has 12 users, it has 66 connections. Every new user added to the network doesn&#x27;t just add a single unit of value—they add potential connections with <strong>every single existing user</strong> already in the network. This exponential connection increase is the driving engine behind <strong>network effects</strong>.</p>
 <h2>Why it matters</h2>
-<p>Metcalfe&#x27;s Law explains why tech platforms (like telephone networks, social networks, messaging apps, and marketplaces) are winner-take-all markets. * <strong>The Cold Start Problem:</strong> When a platform starts, it has very few users, so its value is close to zero. It is incredibly difficult to acquire the first few thousand users. * <strong>Critical Mass:</strong> Once a network crosses a certain threshold (critical mass), its value surges dramatically, creating a strong pull that attracts more users automatically. * <strong>Lock-in Effect:</strong> It explains why it is incredibly difficult to displace dominant networks (like Facebook, iOS/Android, or Windows). Even if a competitor builds a technically superior product, it has no network value until it convinces millions of people to switch together.</p>
+<p>Metcalfe&#x27;s Law explains why tech platforms (like telephone networks, social networks, messaging apps, and marketplaces) are winner-take-all markets. <em> <strong>The Cold Start Problem:</strong> When a platform starts, it has very few users, so its value is close to zero. It is incredibly difficult to acquire the first few thousand users. </em> <strong>Critical Mass:</strong> Once a network crosses a certain threshold (critical mass), its value surges dramatically, creating a strong pull that attracts more users automatically. * <strong>Lock-in Effect:</strong> It explains why it is incredibly difficult to displace dominant networks (like Facebook, iOS/Android, or Windows). Even if a competitor builds a technically superior product, it has no network value until it convinces millions of people to switch together.</p>
 <h2>A simple example</h2>
 <p>Imagine you own the only telephone in the world. It is completely useless to you because there is no one else to call; its value is zero. If another person buys a phone, the network now has 2 phones and 1 possible connection. If a third person buys a phone, there are now 3 connections. By the time 100 people have phones, the network has 4,950 potential connections. The cost of manufacturing each phone remains constant, but the utility of owning a phone has increased astronomically due to the other 99 users.</p>
 <h2>How I can use it</h2>
@@ -49,7 +59,7 @@
         
       <nav class="note-nav-actions" aria-label="Note navigation">
         <a class="note-nav-link" href="../2026-06-27-loss-aversion/">Previous day</a>
-        <span class="note-nav-link is-disabled" aria-disabled="true">Next day</span>
+        <a class="note-nav-link" href="../2026-06-29-nash-equilibrium/">Next day</a>
         <a class="note-nav-link" href="#" data-random-note-page><span aria-hidden="true">↻</span> Random note</a>
       </nav>
     
@@ -61,7 +71,7 @@
       <p><a href="../../">Return home</a></p>
     </footer>
     <script>
-      window.KNOWLEDGE_NOTE_URLS = ["../2026-06-27-loss-aversion/", "../2026-06-26-conways-law/", "../2026-06-25-dunning-kruger-effect/", "../2026-06-24-dunbars-number/", "../2026-06-23-streisand-effect/", "../2026-06-22-brooks-law/", "../2026-06-21-simpsons-paradox/", "../2026-06-20-tragedy-of-the-commons/", "../2026-06-19-sunk-cost-fallacy/", "../2026-06-18-ikea-effect/", "../2026-06-17-hanlons-razor/", "../2026-06-16-parkinsons-law/", "../2026-06-15-the-peter-principle/", "../2026-06-14-negentropy/", "../2026-06-13-the-lindy-effect/", "../2026-06-12-goodharts-law/", "../2026-06-11-negative-space-ma/", "../2026-06-10-court-jester-hypothesis/", "../2026-06-09-red-queen-effect/", "../2026-06-08-occams-razor/", "../2026-06-07-iceberg-model/", "../2026-06-06-pareto-principle/", "../2026-06-05-confirmation-bias/", "../2026-06-04-local-optimum/", "../2026-06-03-cognitive-dissonance/", "../2026-06-02-boundary-conditions/", "../2026-06-01-coordination-cost/", "../2026-05-31-hysteresis/", "../2026-05-30-negative-space/", "../2026-05-29-activation-energy/", "../2026-05-28-scale-invariance/", "../2026-05-27-path-dependence/", "../2026-05-26-signal-noise/", "../2026-05-25-le-chatelier-principle/", "../2026-05-24-entropy/", "../2026-05-23-symbiosis/", "../2026-05-22-resonance/", "../2026-05-21-availability-heuristic/", "../2026-05-20-abstraction/", "../2026-05-19-regression-to-the-mean/", "../2026-05-18-second-order-effects/", "../2026-05-17-survivorship-bias/", "../2026-05-16-compound-interest/", "../2026-05-15-map-territory/", "../2026-05-14-rat-race/", "../2026-05-13-homeostasis/", "../2026-05-12-marginal-utility/", "../2026-05-11-pigeonhole-principle/", "../2026-05-10-forgetting-curve/", "../2026-05-09-manuscript-margins/", "../2026-05-08-visible-latency/", "../2026-05-07-inertia/", "../2026-05-06-evolution-selection/", "../2026-05-05-opportunity-cost/", "../2026-05-04-working-memory/", "../2026-05-03-feedback-loops/", "../2026-05-02-bayes-rule/", "../2026-05-01-stoic-control/"];
+      window.KNOWLEDGE_NOTE_URLS = ["../2026-06-29-nash-equilibrium/", "../2026-06-27-loss-aversion/", "../2026-06-26-conways-law/", "../2026-06-25-dunning-kruger-effect/", "../2026-06-24-dunbars-number/", "../2026-06-23-streisand-effect/", "../2026-06-22-brooks-law/", "../2026-06-21-simpsons-paradox/", "../2026-06-20-tragedy-of-the-commons/", "../2026-06-19-sunk-cost-fallacy/", "../2026-06-18-ikea-effect/", "../2026-06-17-hanlons-razor/", "../2026-06-16-parkinsons-law/", "../2026-06-15-the-peter-principle/", "../2026-06-14-negentropy/", "../2026-06-13-the-lindy-effect/", "../2026-06-12-goodharts-law/", "../2026-06-11-negative-space-ma/", "../2026-06-10-court-jester-hypothesis/", "../2026-06-09-red-queen-effect/", "../2026-06-08-occams-razor/", "../2026-06-07-iceberg-model/", "../2026-06-06-pareto-principle/", "../2026-06-05-confirmation-bias/", "../2026-06-04-local-optimum/", "../2026-06-03-cognitive-dissonance/", "../2026-06-02-boundary-conditions/", "../2026-06-01-coordination-cost/", "../2026-05-31-hysteresis/", "../2026-05-30-negative-space/", "../2026-05-29-activation-energy/", "../2026-05-28-scale-invariance/", "../2026-05-27-path-dependence/", "../2026-05-26-signal-noise/", "../2026-05-25-le-chatelier-principle/", "../2026-05-24-entropy/", "../2026-05-23-symbiosis/", "../2026-05-22-resonance/", "../2026-05-21-availability-heuristic/", "../2026-05-20-abstraction/", "../2026-05-19-regression-to-the-mean/", "../2026-05-18-second-order-effects/", "../2026-05-17-survivorship-bias/", "../2026-05-16-compound-interest/", "../2026-05-15-map-territory/", "../2026-05-14-rat-race/", "../2026-05-13-homeostasis/", "../2026-05-12-marginal-utility/", "../2026-05-11-pigeonhole-principle/", "../2026-05-10-forgetting-curve/", "../2026-05-09-manuscript-margins/", "../2026-05-08-visible-latency/", "../2026-05-07-inertia/", "../2026-05-06-evolution-selection/", "../2026-05-05-opportunity-cost/", "../2026-05-04-working-memory/", "../2026-05-03-feedback-loops/", "../2026-05-02-bayes-rule/", "../2026-05-01-stoic-control/"];
     </script>
     <script src="../../static.js"></script>
   </body>
