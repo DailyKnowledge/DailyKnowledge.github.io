@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 933" role="img" aria-labelledby="title desc">
+  <title id="title">Parkinson's Law of Triviality</title>
+  <desc id="desc">A comparison showing the nuclear reactor project (costing 150 million dollars, approved in 10 minutes) and the bicycle shed project (costing 3500 dollars, debated for 45 minutes over its paint color).</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f8fbff"/>
+      <stop offset="1" stop-color="#f4f2ec"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="20" flood-color="#17212b" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+  <rect width="1400" height="933" fill="url(#bg)"/>
+  <rect x="160" y="126" width="1080" height="680" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+  
+  <text x="220" y="204" fill="#2e6678" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">BIKE-SHEDDING</text>
+  <text x="470" y="204" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="400"> (Parkinson's Law of Triviality)</text>
+
+  <!-- Left Column: The Nuclear Reactor -->
+  <g>
+    <!-- Background Frame -->
+    <rect x="220" y="270" width="380" height="420" rx="12" fill="#f8f9fa" stroke="#e0e0e0" stroke-width="2"/>
+    <text x="410" y="315" text-anchor="middle" fill="#2e6678" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">Nuclear Power Plant</text>
+
+    <!-- Cooling Tower Graphic -->
+    <g transform="translate(10, 20)">
+      <!-- Steam puffs -->
+      <path d="M 380 345 Q 390 325 400 335 Q 410 325 420 345" fill="none" stroke="#b0bec5" stroke-width="3" stroke-linecap="round"/>
+      <!-- Tower body -->
+      <path d="M 350 480 Q 375 390 365 350 L 435 350 Q 425 390 450 480 Z" fill="#ffffff" stroke="#68747c" stroke-width="3.5" stroke-linejoin="round"/>
+      <!-- Grid lines on tower -->
+      <path d="M 361 380 L 439 380 M 356 420 L 444 420 M 352 450 L 448 450" stroke="#b0bec5" stroke-width="1.5"/>
+      <!-- Radiation logo -->
+      <circle cx="400" cy="415" r="12" fill="#c59838" stroke="#333333" stroke-width="1.5"/>
+      <path d="M 400 415 L 393 403 A 14 14 0 0 1 407 403 Z" fill="#333333"/>
+      <path d="M 400 415 L 407 427 A 14 14 0 0 1 393 427 Z" fill="#333333"/>
+      <circle cx="400" cy="415" r="4" fill="#c59838"/>
+    </g>
+
+    <!-- Project Details -->
+    <text x="410" y="550" text-anchor="middle" fill="#2c3e50" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700">Cost: $150,000,000</text>
+    
+    <rect x="300" y="575" width="220" height="34" rx="6" fill="#e8f5e9" stroke="#388e3c" stroke-width="1.5"/>
+    <text x="410" y="597" text-anchor="middle" fill="#388e3c" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700">Discussion: 10 Minutes</text>
+
+    <text x="410" y="645" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="14">Outcome: Approved with no debate.</text>
+    <text x="410" y="665" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="14">(Too complex for most to challenge)</text>
+  </g>
+
+  <!-- Right Column: The Bicycle Shed -->
+  <g>
+    <!-- Background Frame -->
+    <rect x="800" y="270" width="380" height="420" rx="12" fill="#f8f9fa" stroke="#e0e0e0" stroke-width="2"/>
+    <text x="990" y="315" text-anchor="middle" fill="#c95b4d" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">The Bicycle Shed</text>
+
+    <!-- Shed and Bike Graphic -->
+    <g transform="translate(40, 20)">
+      <!-- Shed -->
+      <path d="M 910 480 L 910 380 L 960 340 L 1010 380 L 1010 480 Z" fill="#ffffff" stroke="#c59838" stroke-width="3.5" stroke-linejoin="round"/>
+      <!-- Planks -->
+      <line x1="935" y1="380" x2="935" y2="480" stroke="#fff3e0" stroke-width="2"/>
+      <line x1="960" y1="340" x2="960" y2="480" stroke="#fff3e0" stroke-width="2"/>
+      <line x1="985" y1="380" x2="985" y2="480" stroke="#fff3e0" stroke-width="2"/>
+      <!-- Roof -->
+      <path d="M 900 385 L 960 337 L 1020 385" fill="none" stroke="#c95b4d" stroke-width="5" stroke-linecap="round"/>
+
+      <!-- Bicycle -->
+      <g transform="translate(930, 440) scale(0.6)">
+        <circle cx="20" cy="40" r="16" fill="none" stroke="#1f7a8c" stroke-width="4"/>
+        <circle cx="80" cy="40" r="16" fill="none" stroke="#1f7a8c" stroke-width="4"/>
+        <!-- Frame -->
+        <path d="M 20 40 L 45 40 L 70 15 L 35 15 L 20 40 Z" fill="none" stroke="#1f7a8c" stroke-width="4" stroke-linejoin="round"/>
+        <line x1="45" y1="40" x2="70" y2="15" stroke="#1f7a8c" stroke-width="4"/>
+        <line x1="80" y1="40" x2="70" y2="15" stroke="#1f7a8c" stroke-width="4"/>
+        <line x1="35" y1="15" x2="30" y2="5" stroke="#1f7a8c" stroke-width="4" stroke-linecap="round"/>
+      </g>
+    </g>
+
+    <!-- Project Details -->
+    <text x="990" y="550" text-anchor="middle" fill="#2c3e50" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700">Cost: $3,500</text>
+    
+    <rect x="880" y="575" width="220" height="34" rx="6" fill="#fbebe8" stroke="#c95b4d" stroke-width="1.5"/>
+    <text x="990" y="597" text-anchor="middle" fill="#c95b4d" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700">Discussion: 45 Minutes</text>
+
+    <text x="990" y="645" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="14">Outcome: Heated debate over materials,</text>
+    <text x="990" y="665" text-anchor="middle" fill="#68747c" font-family="Inter, Arial, sans-serif" font-size="14">paint color, and layout.</text>
+  </g>
+
+  <!-- Connection Label in Center -->
+  <g transform="translate(630, 420)">
+    <!-- Warning/Alert icon -->
+    <path d="M 70 0 L 120 86 Q 124 93 115 93 L 25 93 Q 16 93 20 86 Z" fill="#fff9c4" stroke="#fbc02d" stroke-width="3" stroke-linejoin="round"/>
+    <text x="70" y="70" text-anchor="middle" fill="#fbc02d" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="900">!</text>
+    <text x="70" y="125" text-anchor="middle" fill="#c59838" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700">THE PARADOX</text>
+  </g>
+
+  <!-- Bottom Message -->
+  <text x="700" y="790" text-anchor="middle" fill="#5d6870" font-family="Inter, Arial, sans-serif" font-size="32">Trivial issues receive endless focus because anyone can understand them.</text>
+</svg>
